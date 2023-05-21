@@ -18,7 +18,7 @@ body {
 .container-fluid { width: 100%; }
 
 .bg-primary {
-    background: linear-gradient(to bottom, rgb(118, 72, 233), white);
+    background-image: radial-gradient(circle at 50% -20.71%, #ff73ff 0, #c162ff 25%, #7d4ef4 50%, #3339c7 75%, #00279d 100%);
 }
 
 .container {
@@ -64,7 +64,7 @@ nav li {
 nav li:hover { opacity: 0.8; }
 
 nav a {
-    font-weight: bold;
+    font-weight: regular;
     text-decoration: none;
     color: rgb(118, 72, 233);
 }
@@ -216,5 +216,30 @@ footer {
 
 .margin-footer { margin-right: 20px; }
 
-.borderbottom { border-bottom: 1px solid rgb(230, 224, 239); }
+.border-bottom { border-bottom: 1px solid rgb(230, 224, 239); }
 
+/* // criar uma classe badge */
+.badge {
+    /* background-color: rgb(118, 72, 233); */
+    color: white;
+    padding: 3px 5px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+/* criar uma classe badge-yellow */
+.badge-yellow {
+    background-color: rgb(255, 204, 0);
+    color: black;
+}
+
+/* criar uma class para um botão de whatsapp com a cor do whatsapp */
+.btn-whatsapp {
+    background-color: rgb(37, 211, 102);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: regular;
+    text-decoration: none;
+}
