@@ -140,11 +140,6 @@ header {
 
 #sct-2 > .functions-2 img { max-width: 70px; }
 
-.borderbottom-functions { border-bottom: 1px solid rgb(230, 224, 239); }
-
-#robot { max-width: 65px; }
-
-
 #sct-3 h2 {
     font-size: 1.2rem;
     line-height: 1.6;
@@ -152,6 +147,53 @@ header {
     color: rgb(118, 72, 233);
     font-weight: bold;
     padding-bottom: 30px;
+}
+
+.card-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding-bottom: 15px;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    color: rgb(118, 72, 233);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.card p {
+    min-height: 138px;
+    text-align: center;
+}
+
+.card a {
+    text-decoration: none;
+    color: rgb(112, 73, 139);
+    border: 2px solid rgb(112, 73, 139);
+    padding: 10px 20px;
+    border-radius: 50px;
 }
 
 .duvidas-img { max-width: 550px; }
@@ -243,3 +285,4 @@ footer {
     font-weight: regular;
     text-decoration: none;
 }
+
