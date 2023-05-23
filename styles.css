@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 
+:root {
+    --purple: rgb(118, 72, 233);
+  }
+
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -17,9 +21,7 @@ body {
 
 .container-fluid { width: 100%; }
 
-.bg-primary {
-    background-image: radial-gradient(circle at 50% -20.71%, #ff73ff 0, #c162ff 25%, #7d4ef4 50%, #3339c7 75%, #00279d 100%);
-}
+.bg-primary { background-image: radial-gradient(circle at 50% -20.71%, #ff73ff 0, #c162ff 25%, #7d4ef4 50%, #3339c7 75%, #00279d 100%); }
 
 .container {
     max-width: 987px;
@@ -33,7 +35,7 @@ li { list-style: none; }
 .buttons {
     text-decoration: none;
     font-size: 17px;
-    color: rgb(118, 72, 233);
+    color: var(--purple);
     background-color: white;
     padding: 20px 100px;
     border: 2px solid white;
@@ -46,9 +48,6 @@ li { list-style: none; }
     color: white;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
-
-.text-deco { text-decoration: none; }
-
 
 nav:first-child {
     display: flex;
@@ -66,7 +65,7 @@ nav li:hover { opacity: 0.8; }
 nav a {
     font-weight: regular;
     text-decoration: none;
-    color: rgb(118, 72, 233);
+    color: var(--purple);
 }
 
 nav a:hover {
@@ -129,7 +128,7 @@ header {
 
 .functions div, .functions-2 { padding: 40px; }
 
-.functions h3, h2 { color: rgb(118, 72, 233); }
+.functions h3, h2 { color: var(--purple); }
 
 .functions-2 h2 {
     max-width: 500px;
@@ -144,7 +143,7 @@ header {
     font-size: 1.2rem;
     line-height: 1.6;
     max-width: 90%;
-    color: rgb(118, 72, 233);
+    color: var(--purple);
     font-weight: bold;
     padding-bottom: 30px;
 }
@@ -178,7 +177,7 @@ header {
 
 .card h3 {
     font-size: 1.2rem;
-    color: rgb(118, 72, 233);
+    color: var(--purple);
     margin-bottom: 15px;
     text-align: center;
 }
@@ -208,6 +207,9 @@ header {
     flex-direction: column;
 }
 
+#sct-4 { background: rgb(125, 78, 244); }
+
+
 #sct-4 p {
     color: white;
     font-size: 1.3rem;
@@ -219,10 +221,6 @@ header {
     align-items: center;
     flex-direction: column;
     padding: 45px 0 30px 0;
-}
-
-.bg-secondary {
-    background: rgb(125, 78, 244);
 }
 
 
@@ -244,7 +242,7 @@ header {
 
 #sct-5 a { text-decoration: none; 
     text-decoration: none;
-    color: rgb(118, 72, 233);
+    color: var(--purple);
 }
 
 #sct-5 a:hover { opacity: 0.8; }
@@ -260,22 +258,19 @@ footer {
 
 .border-bottom { border-bottom: 1px solid rgb(230, 224, 239); }
 
-/* // criar uma classe badge */
 .badge {
-    /* background-color: rgb(118, 72, 233); */
     color: white;
     padding: 3px 5px;
     border-radius: 20px;
     font-size: 12px;
     font-weight: bold;
 }
-/* criar uma classe badge-yellow */
+
 .badge-yellow {
     background-color: rgb(255, 204, 0);
     color: black;
 }
 
-/* criar uma class para um botão de whatsapp com a cor do whatsapp */
 .btn-whatsapp {
     background-color: rgb(37, 211, 102);
     color: white;
@@ -285,4 +280,3 @@ footer {
     font-weight: regular;
     text-decoration: none;
 }
-
