@@ -1,18 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 
+/* início dos estilos padrão */
 :root {
     --purple: rgb(118, 72, 233);
   }
 
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-size: 14px;
-    font-family: 'Lexend Deca', sans-serif;
+.line-height {
+    line-height: 1.6;
 }
 
 .text-align { text-align: center; }
@@ -23,14 +17,14 @@ body {
 
 .bg-primary { background-image: radial-gradient(circle at 50% -20.71%, #ff73ff 0, #c162ff 25%, #7d4ef4 50%, #3339c7 75%, #00279d 100%); }
 
+li { list-style: none; }
+
 .container {
     max-width: 987px;
     display: flex;
     margin-left: auto;
     margin-right: auto;
 }
-
-li { list-style: none; }
 
 .buttons {
     text-decoration: none;
@@ -41,6 +35,7 @@ li { list-style: none; }
     border: 2px solid white;
     border-radius: 40px;
     font-weight: bold;
+    transition: .3s ease-in-out;
 }
 
 .buttons:hover {
@@ -48,6 +43,21 @@ li { list-style: none; }
     color: white;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
+
+/* final dos estilos padrão */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
 
 nav:first-child {
     display: flex;
@@ -57,10 +67,12 @@ nav:first-child {
 
 nav li {
     display: inline-block;
-    margin-left: 50px;
+    margin-left: 50px; 
 }
 
-nav li:hover { opacity: 0.8; }
+nav li:hover {
+    opacity: 0.8;
+}
 
 nav a {
     font-weight: regular;
@@ -85,7 +97,10 @@ header {
 .logo-header {
     display: flex;
     align-items: center;
+    font-weight: bold;
 }
+
+
 
 .logo-header img {
     max-width: 35px;
@@ -133,7 +148,6 @@ header {
 .functions-2 h2 {
     max-width: 500px;
     margin:auto;
-    line-height: 1.6;
     padding: 40px 0 40px 0;
 }
 
@@ -141,7 +155,6 @@ header {
 
 #sct-3 h2 {
     font-size: 1.2rem;
-    line-height: 1.6;
     max-width: 90%;
     color: var(--purple);
     font-weight: bold;
@@ -161,6 +174,7 @@ header {
     justify-content: space-between;
 }
 
+
 .card {
     display: flex;
     flex-direction: column;
@@ -179,20 +193,27 @@ header {
     font-size: 1.2rem;
     color: var(--purple);
     margin-bottom: 15px;
-    text-align: center;
 }
 
 .card p {
     min-height: 138px;
-    text-align: center;
 }
 
 .card a {
     text-decoration: none;
-    color: rgb(112, 73, 139);
-    border: 2px solid rgb(112, 73, 139);
-    padding: 10px 20px;
+    font-weight: bold;
+    color: white;
+    border: 1px solid var(--purple);
+    background-color: var(--purple);
+    padding: 7px 20px;
     border-radius: 50px;
+}
+
+.card a:hover {
+    transition: .3s ease-in-out;
+    background-color: transparent;
+    border: 1px solid var(--purple);
+    color: var(--purple);
 }
 
 .duvidas-img { max-width: 550px; }
@@ -230,18 +251,18 @@ header {
 #contacts img{ max-width: 15px; }
 
 #sct-5 {
-    display: grid;
-    grid-template-columns: repeat(3);
     background-color: white;
     padding: 50px;
 }
 
-#sct-5 div { padding: 0 50px 0 50px; }
+#sct-5 > .container > div { 
+    padding-right: 50px;
+}
 
 #sct-5 h3 { padding-bottom: 20px; }
 
-#sct-5 a { text-decoration: none; 
-    text-decoration: none;
+#sct-5 a {
+    text-decoration: none; 
     color: var(--purple);
 }
 
@@ -273,10 +294,18 @@ footer {
 
 .btn-whatsapp {
     background-color: rgb(37, 211, 102);
+    border: 4px solid rgb(37, 211, 102);
     color: white;
     padding: 10px 20px;
     border-radius: 20px;
     font-size: 16px;
     font-weight: regular;
     text-decoration: none;
+    transition: .3s ease-in-out;
+}
+
+.btn-whatsapp:hover {
+    background-color: rgb(65, 225, 121);
+    color: rgb(240, 247, 243);
+    border: 4px solid rgb(65, 225, 121);
 }
