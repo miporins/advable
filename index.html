@@ -11,9 +11,21 @@
 		<title>Advable</title>
 	</head>
 	<body>
+
+		<!--
 		<header class="border-bottom">
 			<nav class="container-fluid container">
 				<a class="logo-header" href="https://advable-mvp.herokuapp.com/"><img src="./imagens/logotipo.png" alt="Logotipo do software Advable">Advable</a>
+				
+				<div class="menu">
+						<input type="checkbox" id="checkbox-menu">
+						<label for="checkbox-menu">
+							<span></span>
+							<span></span>
+							<span></span>
+						</label>
+				</div>
+
 				<ul>
 					<li><a href="#sct-1">Início</a></li>
 					<li><a href="sobre.html">Sobre</a></li>
@@ -22,6 +34,26 @@
 					<li><a href="https://advable-mvp.herokuapp.com/login"><strong>Acesso</strong></a></li>
 				</ul>
 			</nav>
+		</header>
+		-->
+
+		<header class="header border-bottom">
+			<div class="container container-fluid">
+				<div class="logo">
+					<a class="logo-img" href="https://advable-mvp.herokuapp.com/"><img src="./imagens/logotipo.png" alt="">Advable</a>
+				</div>
+				<div class="navigation">
+					<input type="checkbox" class="toggle-menu">
+					<div class="hamburguer"></div>
+					<ul class="menu">
+						<li><a href="#sct-1">Início</a></li>
+						<li><a href="sobre.html">Sobre</a></li>
+						<li><a href="creditos.html">Preços</a></li>
+						<li><a href="contato.html">Contato</a></li>
+						<li><a href="https://advable-mvp.herokuapp.com/login"><strong>Acesso</strong></a></li>
+					</ul>
+				</div>
+			</div>
 		</header>
 		
 		<section id="sct-1" class="container-fluid bg-primary text-align">
@@ -124,7 +156,7 @@
 				<div><img class="duvidas-img" src="./imagens/multitaskkk.png" alt=""></div>
 				
 				<div class="duvidas-contato">
-					<h2 class="line-height">Tem dúvidas? Podemos ajudar!</h2>
+					<h2 class="line-height">Dúvidas? Podemos ajudar!</h2>
 					<a href="https://api.whatsapp.com/send?phone=5584999031110" class="btn-whatsapp">Fale conosco pelo <strong>Whatsapp</strong></a>
 				</div>
 			</div>
@@ -140,43 +172,53 @@
 				</div>
 			</div>
 		</section>
-		
-		<section id="sct-6" class="container-fluid border-bottom">
-			<div class="container">
-				<div>
-					<h3>Sobre nós</h3>
-					<ul>
-						<li><a href="#">Termos de uso</a></li>
-						<li><a href="#">Políticas de privacidade</a></li>
-						<li><a href="#">Sobre o advable</a></li>
-						<li><a href="#">Contatos</a></li>
-					</ul>
-				</div>
-				
-				<div>
-					<h3>Dúvidas e suporte</h3>
-					<ul>
-						
-						<li><a href="#">sdaknmak</a></li>
-						<li><a href="#">sdaknmak</a></li>
-						<li><a href="#">sdaknmak</a></li>
-					</ul>
-				</div>
-				
-				<div>
-					<h3>kosdkmfsdk</h3>
-					<ul>
-						<li><a href="#">wekqmwekj</a></li>
-						<li><a href="#">sdfjnaisdfn</a></li>
-						<li><a href="#">sdfjnaisdfn</a></li>
-					</ul>
+
+			<div class="logo-footer container-fluid">
+				<div class="logo-footer-container container">
+					<img src="./imagens/logotipo.png" alt="">
+					<div class="line-height">
+						<p>Avable 2023</p>
+						<p>Todos os direitos reservados</p>
+					</div>
 				</div>
 			</div>
-		</section>
+			
+			<section id="sct-6" class="border-bottom">
+				<div class=" container">
+					<div class="sct-6-container">
+						<h3>Sobre nós</h3>
+						<ul>
+							<li><a href="#">Termos de uso</a></li>
+							<li><a href="#">Políticas de privacidade</a></li>
+							<li><a href="#">Sobre o advable</a></li>
+							<li><a href="#">Contatos</a></li>
+						</ul>
+					</div>
+					
+					<div>
+						<h3>Dúvidas e suporte</h3>
+						<ul>
+							
+							<li><a href="#">sdaknmak</a></li>
+							<li><a href="#">sdaknmak</a></li>
+							<li><a href="#">sdaknmak</a></li>
+						</ul>
+					</div>
+					
+					<div>
+						<h3>kosdkmfsdk</h3>
+						<ul>
+							<li><a href="#">wekqmwekj</a></li>
+							<li><a href="#">sdfjnaisdfn</a></li>
+							<li><a href="#">sdfjnaisdfn</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
 		
 		<footer class="container-fluid">
 			<div class="container">
-				<div id="contacts">
+				<nav id="social-media">
 					<ul>
 						<li class="margin-footer">
 							<a href="https://blog.advable.com.br/2023/01/inicio-da-jornada/"><img src="./imagens/logotipo.png" alt=""></a>
@@ -191,10 +233,7 @@
 							<a href="#"><img src="./imagens/insta.jpg" alt=""></a>
 						</li>
 					</ul>
-				</div>
-				<div>
-					<p>Todos os direitos reservados</p>
-				</div>
+				</nav>
 			</div>
 		</footer>
 		
