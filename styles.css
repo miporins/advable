@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 
-/* início dos estilos padrão */
+/* início dos estilos */
 :root {
     --purple: rgb(118, 72, 233);
     --clear-purple: rgb(209, 198, 235);
@@ -12,13 +12,15 @@
 
 .text-shadow { text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
 
-.container-fluid { width: 100%; }
+.border-bottom { border-bottom: 1px solid rgb(230, 224, 239); }
 
 .bg-primary { background-image: radial-gradient(circle at 50% -20.71%, #ff73ff 0, #c162ff 25%, #7d4ef4 50%, #3339c7 75%, #00279d 100%); }
 
-.border-bottom { border-bottom: 1px solid rgb(230, 224, 239); }
-
 li { list-style: none; }
+
+/* display do body */
+
+.container-fluid { width: 100%; }
 
 .container {
     max-width: 987px;
@@ -26,7 +28,9 @@ li { list-style: none; }
     margin-left: auto;
     margin-right: auto;
 }
+/**/
 
+/* botões de registro */
 .buttons {
     text-decoration: none;
     font-size: 17px;
@@ -44,8 +48,8 @@ li { list-style: none; }
     color: white;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
-
-/* final dos estilos padrão */
+/**/
+/* final dos estilos*/
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -56,59 +60,9 @@ li { list-style: none; }
 body {
     font-size: 14px;
     font-family: 'Nunito Sans', sans-serif;
-    
 }
 
-/*
-
-nav:first-child {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav li {
-    display: inline-block;
-    margin-left: 50px;
-}
-
-nav li:hover {
-    opacity: 0.8;
-}
-
-nav a {
-    text-decoration: none;
-    color: var(--purple);
-    transition: 0.3s;
-}
-
-nav a:hover {
-    opacity: 1;
-    font-weight: bolder;
-    box-shadow: 0 -5px 2px var(--purple) inset, 200px 0 0 white inset;
-}
-
-header {
-    padding: 10px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: white;
-}
-
-.logo-header {
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-}
-
-.logo-header img {
-    max-width: 35px;
-    padding-right: 6px;
-}
-*/
-
+/* início do header */
 .header {
     position: fixed;
     width: 100%;
@@ -126,7 +80,7 @@ header {
 }
 
 .menu strong, .logo a {
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .logo-img {
@@ -363,6 +317,8 @@ header {
     padding: 40px 0 20px 0;
 }
 
+/* do footer */
+
 #social-media li { display: inline-block; }
 
 #social-media {
@@ -381,15 +337,22 @@ header {
 
 #social-media{ padding: 20px 0 20px 0; }
 
+.sct-6-container div{
+    margin: .5em 4em 1.5em 1em;
+}
+
 .margin-footer { margin: 10px; }
 
 .logo-footer-container img {
-    max-width: 90px;
+    max-width: 80px;
+    margin-right: .5em;
 }
 
 .logo-footer-container div {
     padding-left: 8px;
 }
+
+/**/
 
 .badge {
     color: white;
@@ -431,7 +394,9 @@ header {
     font-size: 20px;
 }
 
+/**/
 
+/* início da versão mobile */
 @media (max-width: 425px) {
     body {
         font-size: small;
@@ -466,12 +431,6 @@ header {
     justify-content: center;
    }
 
-   /* #sct-6 .container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 15px 0 0 20px;
-} */
-
    .logo-footer img{ max-width: 65px; }
 
    .logo-footer-container{
@@ -493,6 +452,8 @@ header {
     margin-bottom: 20px;
    }
 }
+
+/**/
 
 @media (max-width: 768px) {
 
@@ -575,20 +536,24 @@ header {
         display: flex;
     }
 
-    
-
     .logo-footer img{ max-width: 65px; }
-
-    .logo-footer { padding: 20px 0 10px 20px; }
 
     .logo-footer p {
         font-size: smaller;
-        padding-left: 10px;
+    }
+
+    .logo-footer {
+        margin: 2rem 0 2rem 1rem; 
     }
 
     .logo-footer-container {
         display: flex;
         align-items: center;
+    }
+
+    .sct-6-container {
+        display: flex;
+        justify-content: space-between;
     }
 
     .navigation input:checked ~ .menu {
@@ -613,8 +578,6 @@ header {
         box-shadow: 0 -3px 0px var(--purple) inset, 500px 0 0 rgb(251, 249, 255) inset;
     }
 
-    
-
     .titles {
         padding: 200px 0 160px 0;
     }
@@ -624,29 +587,18 @@ header {
     }
 
     /* do footer */
-    .sct-6-container div {
-        margin-right: 50px;
-    }
 
     .logo-footer-container {
         display: flex;
         align-items: center;
         font-size: small;
-        padding: 50px 0 50px 0;
+        margin: 3rem 0 2rem 1rem;
     }
 
     footer img {
         max-width: 15px;
     }
 
-    .logo-footer-container, .sct-6-container  {
-        padding: 20px 0 20px 20px;
-        /*
-        display: flex;
-        justify-content: space-between;
-        */
-    }
 
-    
     
 }
