@@ -6,6 +6,8 @@
     --clear-purple: rgb(209, 198, 235);
   }
 
+li { list-style: none; }
+
 .line-height { line-height: 1.6; }
 
 .text-align { text-align: center; }
@@ -16,10 +18,19 @@
 
 .bg-primary { background-image: radial-gradient(circle at 50% -20.71%, #ff73ff 0, #c162ff 25%, #7d4ef4 50%, #3339c7 75%, #00279d 100%); }
 
-li { list-style: none; }
+.badge {
+    color: white;
+    padding: 3px 5px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
 
+.badge-yellow {
+    background-color: rgb(255, 204, 0);
+    color: black;
+}
 /* display do body */
-
 .container-fluid { width: 100%; }
 
 .container {
@@ -29,7 +40,6 @@ li { list-style: none; }
     margin-right: auto;
 }
 /**/
-
 /* botões de registro */
 .buttons {
     text-decoration: none;
@@ -62,7 +72,7 @@ body {
     font-family: 'Nunito Sans', sans-serif;
 }
 
-/* início do header */
+/* início do menu do header */
 .header {
     position: fixed;
     width: 100%;
@@ -119,10 +129,6 @@ body {
     transition: 0.5s;
 }
 
-.menu li {
-    list-style: none;
-}
-
 .hamburguer {
     position: relative;
     width: 30px;
@@ -164,13 +170,9 @@ body {
     opacity: 0;
 }
 
-.hamburguer, .toggle-menu {
-    display: none;
-}
+.hamburguer, .toggle-menu { display: none; }
 
-.navigation input:checked ~ .hamburguer {
-    background: transparent;
-}
+.navigation input:checked ~ .hamburguer { background: transparent; }
 
 .navigation input:checked ~ .hamburguer:before {
     top: 0;
@@ -183,9 +185,9 @@ body {
     transform: rotate(45deg);
     width: 30px;
 }
+/* fim do menu do header */
 
-
-
+/* primeira section */
 .titles {
     padding: 200px 0 120px 0;
     display: flex;
@@ -203,11 +205,13 @@ body {
 
 .registro { padding-bottom: 70px; }
 
+/* !!! ver o que muda tirando isso aqui */
 #sct-3 {
     display: flex;
     flex-direction: column;
 }
-
+/**/
+/* inicio da segunda section (funções do software)*/
 .functions {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -222,41 +226,18 @@ body {
 .functions div, .functions-2 { padding: 40px; }
 
 .functions h3, h2 { color: var(--purple); }
-
+/**/
+/* inicio da terceira section (diário de dev) */
 .functions-2 h2 {
     max-width: 500px;
     margin:auto;
     padding: 20px 0 40px 0;
 }
 
-#sct-4 h2 {
-    font-size: 1.2rem;
-    max-width: 90%;
-    color: var(--purple);
-    font-weight: bold;
-    padding-bottom: 30px;
-}
-
 .card-columns {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
-}
-
-.card-content {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-
-.card {
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    padding-bottom: 15px;
 }
 
 #sct-3 img {
@@ -266,10 +247,25 @@ body {
     border-radius: 4px 4px 0 0;
 }
 
+.card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding-bottom: 15px;
+}
+
 .card h3 {
     font-size: 1.2rem;
     color: var(--purple);
     margin-bottom: 15px;
+}
+
+.card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card a {
@@ -288,8 +284,17 @@ body {
     border: 1px solid var(--purple);
     color: var(--purple);
 }
-
+/**/
+/* quarta section - dúvidas whatsapp */
 .duvidas-img { max-width: 550px; }
+
+#sct-4 h2 {
+    font-size: 1.2rem;
+    max-width: 90%;
+    color: var(--purple);
+    font-weight: bold;
+    padding-bottom: 30px;
+}
 
 .duvidas-contato img { max-width: 50px; }
 
@@ -299,72 +304,6 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
-
-#sct-5 { background: rgb(125, 78, 244); }
-
-
-#sct-5 p {
-    color: white;
-    font-size: 1.3rem;
-}
-
-#sct-5 div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 40px 0 20px 0;
-}
-
-/* do footer */
-
-#social-media li { display: inline-block; }
-
-#social-media {
-    margin-left: 10px;
-}
-
-#sct-6 h3 { padding-bottom: 20px; }
-
-#sct-6 a {
-    text-decoration: none; 
-    color: var(--purple);
-}
-
-#sct-6 a:hover { opacity: 0.8; }
-
-
-#social-media{ padding: 20px 0 20px 0; }
-
-.sct-6-container div{
-    margin: .5em 4em 1.5em 1em;
-}
-
-.margin-footer { margin: 10px; }
-
-.logo-footer-container img {
-    max-width: 80px;
-    margin-right: .5em;
-}
-
-.logo-footer-container div {
-    padding-left: 8px;
-}
-
-/**/
-
-.badge {
-    color: white;
-    padding: 3px 5px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: bold;
-}
-
-.badge-yellow {
-    background-color: rgb(255, 204, 0);
-    color: black;
 }
 
 .btn-whatsapp {
@@ -384,9 +323,60 @@ body {
     color: rgb(240, 247, 243);
     border: 4px solid rgb(65, 225, 121);
 }
+/**/
+/* quinta section: segundo botão de reg */
+#sct-5 { background: rgb(125, 78, 244); }
+
+
+#sct-5 p {
+    color: white;
+    font-size: 1.3rem;
+}
+
+#sct-5 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0 20px 0;
+}
+/**/
+/** footer **/
+/* menu do footer */
+.logo-footer-container img {
+    max-width: 80px;
+    margin-right: .5em;
+}
+
+.logo-footer-container div {
+    padding-left: 8px;
+}
+
+.sct-6-container div{
+    margin: .5em 4em 1.5em 1em;
+}
+
+#sct-6 h3 { padding-bottom: 20px; }
+
+#sct-6 a {
+    text-decoration: none; 
+    color: var(--purple);
+}
+
+#sct-6 a:hover { opacity: 0.8; }
+/**/
+/* icones do footer */
+#social-media li { display: inline-block; }
+
+#social-media{ padding: 20px 0 20px 0; }
+
+#social-media { margin-left: 10px; }
+
+.margin-footer { margin: 10px; }
+/**/
+/**/
 
 /* início da página sobre advable */
-
 #sct-1-sobre {
     background-color: var(--purple);
     color: white;
@@ -413,7 +403,7 @@ body {
         height: 100vh;
         width: 100%;
     }
-
+    /* quarta section (whatsapp dúvidas) */
     #sct-4 img {
         max-width: 300px;
     }
@@ -421,16 +411,18 @@ body {
     .duvidas-contato {
         padding-bottom: 50px;
     }
-
+    /**/
+    /* cards */
     .card-content p {
         padding-bottom: 20px; 
     }
-
+    /**/
+    /** footer **/
    footer .container {
     display: flex;
     justify-content: center;
    }
-
+   /* logo do footer */
    .logo-footer img{ max-width: 65px; }
 
    .logo-footer-container{
@@ -443,20 +435,25 @@ body {
     font-size: smaller;
     padding-left: 10px;
    }
-
-   #social-media img {
-    max-width: 22px;
-   }
-
+   /**/
+   /* menu footer */
    #sct-6 div {
     margin-bottom: 20px;
    }
+   /**/
+
+   /* ícones do footer */
+   #social-media img {
+    max-width: 22px;
+   }
+   /**/
+   
 }
+/* fim da versão mobile */
 
-/**/
-
+/* início da versão tablet */
 @media (max-width: 768px) {
-
+    /* menu header */
     .hamburguer, .toggle-menu {
         display: block;
     }
@@ -498,13 +495,19 @@ body {
         opacity: 0.8;
     }
 
-    /* functions 1*/
+    .navigation input:checked ~ .menu {
+        right: 0;
+        box-shadow: 7px 0 25px rgb(152, 151, 153);
+    }
+    /**/
+    /* funções do software */
     .functions {
         padding: 20px 0 30px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
      }
-
+    /**/
     /* cards */
-
     .card-columns{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -513,25 +516,15 @@ body {
     .card p {
         margin-bottom: 20px;
     }
-
     /**/
-
-    .functions {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        
-    }
-
+    /* quarta section (whatsapp dúvidas) */
     .duvidas-img { max-width: 400px; }
 
     .duvidas-contato {
         margin-right: 50px;
     }
-
-    #social-media img {
-        max-width: 22px;
-    }
-
+    /**/
+    /* footer */
     footer .container {
         display: flex;
     }
@@ -556,13 +549,11 @@ body {
         justify-content: space-between;
     }
 
-    .navigation input:checked ~ .menu {
-        right: 0;
-        box-shadow: 7px 0 25px rgb(152, 151, 153);
-    }
+    #social-media img { max-width: 22px; }
 
 }
 
+/* início da versão desktop */
 @media (min-width: 768px) {
 
     .menu li a {
@@ -598,7 +589,5 @@ body {
     footer img {
         max-width: 15px;
     }
-
-
-    
 }
+/**/
