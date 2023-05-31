@@ -96,8 +96,7 @@
 
 		<!-- terceira section: diário de desenvolvimento -->
 		<section id="sct-3" class="border-bottom container-fluid text-align line-height"> 
-			<!-- container da sct-3 -->
-			<div class="mobile functions-2">  <!-- !!! mudar o nome desse container pra "#cards"-->
+			<div id="cards" class="mobile"><!-- container da sct-3 -->
 				<h2>Para saber mais detalhes, acompanhe nosso diário de desenvolvimento:</h2>
 				<!-- início dos cards -->
 				<div class="mobile card-columns container line-height"> <!--container dos cards-->
@@ -151,7 +150,7 @@
 		</section>
 		<!---->
 		<!-- quinta section: segundo botão de registro -->
-		<section id="sct-5" class="container-fluid text-align border-bottom">
+		<section id="sct-5" class="container-fluid text-align border-bottom-footer">
 			<div class="container"><!--container-->
 				<div>
 					<p class="text-shadow">Acesse e experimente a plataforma gratuitamente!</p>
@@ -164,65 +163,53 @@
 		<!---->
 
 		<!-- sexta section: footer -->
-			<!-- <footer>  !!! ver se dá pra usar grid -->
-
+		<footer>
 			<!--container da logo dos direitos-->
-			<div class="logo-footer container">
-				<div class="logo-footer-container">  <!-- !!! ver possibilidade de tirar essa div -->
-					<img src="./imagens/logotipo.png" alt="">
-					<div class="line-height">
-						<p>Avable 2023</p>
-						<p>Todos os direitos reservados</p>
+			<div class="border-bottom-footer container-fluid">
+				<div id="footer-container" class=" container">
+						<div class="logo-footer">
+							<div class="logo-footer-container">
+								<div><img src="./imagens/logotipo.png" alt=""></div>
+									<p><strong>Advable</strong> oferece uma solução completa para otimizar o trabalho jurídico. Com recursos abrangentes e personalizáveis, simplificamos tarefas, melhoramos a eficiência e proporcionamos uma gestão eficaz para advogados e escritórios de advocacia.</p>
+							</div>
+						</div>
+					<!---->
+
+					<!-- menu do footer -->
+					<div id="sct-6" class="line-height"><!-- container !!! ver possibilidade de usar grid para mobile-->
+						
+						<div class="container sct-6-container">
+							<div>
+								<h3>Sobre nós</h3>
+								<ul> <!-- !!! fazer um menu pra mobile -->
+									<li><a href="#">Termos de uso</a></li>
+									<li><a href="#">Políticas de privacidade</a></li>
+									<li><a href="#">Sobre o advable</a></li>
+									<li><a href="#">Contatos</a></li>
+								</ul>
+							</div>
+							
+							<div>
+								<h3>Dúvidas e suporte</h3>
+								<ul>
+									<li><a href="#">sdaknmak</a></li>
+									<li><a href="#">sdaknmak</a></li>
+									<li><a href="#">sdaknmak</a></li>
+								</ul>
+							</div>
+							
+						</div>
 					</div>
 				</div>
-			</div>
-			<!---->
-
-			<!-- menu do footer -->
-			<div id="sct-6" class="border-bottom container-fluid"><!-- container !!! ver possibilidade de usar grid-->
-				
-				<div class="container sct-6-container">
-					<div>
-						<h3>Sobre nós</h3>
-						<ul> <!-- !!! fazer um menu pra mobile -->
-							<li><a href="#">Termos de uso</a></li>
-							<li><a href="#">Políticas de privacidade</a></li>
-							<li><a href="#">Sobre o advable</a></li>
-							<li><a href="#">Contatos</a></li>
-						</ul>
-					</div>
-					
-					<div>
-						<h3>Dúvidas e suporte</h3>
-						<ul>
-							<li><a href="#">sdaknmak</a></li>
-							<li><a href="#">sdaknmak</a></li>
-							<li><a href="#">sdaknmak</a></li>
-						</ul>
-					</div>
-					
-					<div>
-						<h3>kosdkmfsdk</h3>
-						<ul>
-							<li><a href="#">wekqmwekj</a></li>
-							<li><a href="#">sdfjnaisdfn</a></li>
-							<li><a href="#">sdfjnaisdfn</a></li>
-						</ul>
-					</div>
-				</div>
-
 			</div>
 			<!-- fim do container do menu do footer-->
 
 		<!-- icones do footer -->
-		<footer class="container-fluid"> <!--ver possibilidade de mudar esse footer pra div -->
+		<div id="footer-icons" class="container-fluid"> <!--ver possibilidade de mudar esse footer pra div -->
 			<div class="container"> <!--container-->
 
 				<nav id="social-media">
 					<ul>
-						<li class="margin-footer">
-							<a href="https://blog.advable.com.br/2023/01/inicio-da-jornada/"><img src="./imagens/logotipo.png" alt=""></a>
-						</li>
 						<li class="margin-footer">
 							<a href="#"><img src="./imagens/youtube.jpg" alt=""></a>
 						</li>
@@ -236,10 +223,9 @@
 				</nav>
 
 			</div><!---->
-		</footer>
+		</div>
 		<!---->
-		<!--</footer>-->
+		</footer>
 		<!--fim do footer-->
-		
 	</body>
 	</html>

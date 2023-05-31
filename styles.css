@@ -223,12 +223,12 @@ body {
     padding-bottom: 20px;
 }
 
-.functions div, .functions-2 { padding: 40px; }
+.functions div, #cards { padding: 40px; }
 
 .functions h3, h2 { color: var(--purple); }
 /**/
 /* inicio da terceira section (diário de dev) */
-.functions-2 h2 {
+#cards h2 {
     max-width: 500px;
     margin:auto;
     padding: 20px 0 40px 0;
@@ -343,17 +343,27 @@ body {
 /**/
 /** footer **/
 /* menu do footer */
-.logo-footer-container img {
-    max-width: 80px;
-    margin-right: .5em;
+#footer-container {
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
 }
 
-.logo-footer-container div {
-    padding-left: 8px;
+.logo-footer-container img {
+    max-width: 70px;
+    margin: 0 .5em 1.5em 0;
+}
+
+.logo-footer-container {
+    margin: 2rem 2.5rem 2rem 1rem;
+}
+
+#sct-6 {
+    display: flex;
+    align-items: center;
 }
 
 .sct-6-container div{
-    margin: .5em 4em 1.5em 1em;
+    margin: .5em 0 0 3em;
 }
 
 #sct-6 h3 { padding-bottom: 20px; }
@@ -366,6 +376,7 @@ body {
 #sct-6 a:hover { opacity: 0.8; }
 /**/
 /* icones do footer */
+
 #social-media li { display: inline-block; }
 
 #social-media{ padding: 20px 0 20px 0; }
@@ -375,7 +386,6 @@ body {
 .margin-footer { margin: 10px; }
 /**/
 /**/
-
 /* início da página sobre advable */
 #sct-1-sobre {
     background-color: var(--purple);
@@ -383,9 +393,7 @@ body {
     display: flex;
     font-size: 20px;
 }
-
 /**/
-
 /* início da versão mobile */
 @media (max-width: 425px) {
     body {
@@ -418,7 +426,7 @@ body {
     }
     /**/
     /** footer **/
-   footer .container {
+   #footer-icons .container {
     display: flex;
     justify-content: center;
    }
@@ -447,7 +455,6 @@ body {
     max-width: 22px;
    }
    /**/
-   
 }
 /* fim da versão mobile */
 
@@ -525,7 +532,7 @@ body {
     }
     /**/
     /* footer */
-    footer .container {
+    #footer-icons .container {
         display: flex;
     }
 
@@ -555,7 +562,7 @@ body {
 
 /* início da versão desktop */
 @media (min-width: 768px) {
-
+    /* menu header */
     .menu li a {
         color: var(--purple);
         text-decoration: none;
@@ -568,26 +575,23 @@ body {
     .menu li a:hover {
         box-shadow: 0 -3px 0px var(--purple) inset, 500px 0 0 rgb(251, 249, 255) inset;
     }
-
+    /**/
+    /* section 1 (textos do início da página) */
     .titles {
         padding: 200px 0 160px 0;
     }
-
+    /**/
+    /* cards */
     .card p {
         margin-bottom: 20px;
     }
+    /**/
+    /* footer */
+    
 
-    /* do footer */
-
-    .logo-footer-container {
-        display: flex;
-        align-items: center;
-        font-size: small;
-        margin: 3rem 0 2rem 1rem;
-    }
-
-    footer img {
+    #footer-icons img {
         max-width: 15px;
     }
+    /**/
 }
-/**/
+/* fim da versão desktop */
