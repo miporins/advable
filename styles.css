@@ -20,7 +20,6 @@ li { list-style: none; }
 
 .badge {
     color: white;
-    padding: 3px 5px;
     border-radius: 20px;
     font-size: 12px;
     font-weight: bold;
@@ -29,6 +28,11 @@ li { list-style: none; }
 .badge-yellow {
     background-color: rgb(255, 204, 0);
     color: black;
+}
+
+#badge { 
+    max-width: 80px;
+    margin: 10px auto 0 auto;
 }
 /* display do body */
 .container-fluid { width: 100%; }
@@ -205,12 +209,6 @@ body {
 
 .registro { padding-bottom: 70px; }
 
-/* !!! ver o que muda tirando isso aqui */
-#sct-3 {
-    display: flex;
-    flex-direction: column;
-}
-/**/
 /* inicio da segunda section (funções do software)*/
 .functions {
     display: grid;
@@ -286,6 +284,7 @@ body {
 }
 /**/
 /* quarta section - dúvidas whatsapp */
+
 .duvidas-img { max-width: 550px; }
 
 #sct-4 h2 {
@@ -422,6 +421,11 @@ body {
       }
 
     /* cards */
+    #cards .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
     .card-content p {
         padding-bottom: 10px; 
     }
