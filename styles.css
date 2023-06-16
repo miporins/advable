@@ -2,9 +2,20 @@
 
 /* início dos estilos */
 :root {
-    --purple: rgb(118, 72, 233);
-    --clear-purple: rgb(209, 198, 235);
+    --bg-dark: #292634;
+    --purple: rgb(143, 99, 255);
+    --clear-purple: rgb(202, 187, 236);
+    --colorText: hsla(0,0%,100%,.607);
+    --clear-text: #d2cfde;
+    --bg-register: rgb(118, 72, 233);
+    --cards: hsla(260, 6%, 30%, 0.86);
   }
+
+.bg-dark {
+    background-color: var(--bg-dark);
+}
+
+.text-color { color: var(--colorText); }
 
 li { list-style: none; }
 
@@ -14,9 +25,9 @@ li { list-style: none; }
 
 .text-shadow { text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
 
-.border-bottom { border-bottom: 1px solid rgb(230, 224, 239); }
+.border-bottom { border-bottom: 1px solid rgb(62, 62, 62); }
 
-.bg-primary { background-image: radial-gradient(circle at 50% -20.71%, #ff73ff 0, #c162ff 25%, #7d4ef4 50%, #3339c7 75%, #00279d 100%); }
+.bg-primary { background-image: radial-gradient(circle at 50% -20.71%, #bb49bb 0, #a64ee0 25%, #7d4ef4 50%, #2a30c5 75%, #122e8a 100%); }
 
 .badge {
     color: white;
@@ -48,7 +59,7 @@ li { list-style: none; }
 .buttons {
     text-decoration: none;
     font-size: 17px;
-    color: var(--purple);
+    color: var(--bg-register);
     background-color: white;
     padding: 20px 100px;
     border: 2px solid white;
@@ -83,8 +94,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
-    padding: 0 20px;
+    background-color: var(--bg-dark);
     transition: 0.3s;
 }
 
@@ -93,8 +103,22 @@ body {
     justify-content: space-between;
 }
 
-.menu strong, .logo a {
+.logo a {
+    color: var(--clear-text);
     font-size: 16px;
+}
+
+.logo a:hover {
+    color: var(--purple);
+}
+
+.menu .acesso {
+    font-size: 16px;
+}
+
+.menu .acesso:hover {
+    color: var(--clear-text);
+    background-color: var(--bg-register);
 }
 
 .logo-img {
@@ -110,7 +134,6 @@ body {
 .logo a {
     text-decoration: none;
     font-weight: bold;
-    color: var(--purple);
 }
 
 .logo-img img {
@@ -137,7 +160,7 @@ body {
     position: relative;
     width: 30px;
     height: 4px;
-    background: var(--purple);
+    background: var(--bg-register);
     border-radius: 10px;
     cursor: pointer;
     z-index: 2;
@@ -150,7 +173,7 @@ body {
     position: absolute;
     height: 4px;
     right: 0;
-    background: var(--purple);
+    background: var(--bg-register);
     border-radius: 10px;
     transition: 0.3s;
 }
@@ -248,15 +271,20 @@ body {
 .card {
     display: flex;
     flex-direction: column;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 3px 10px rgb(37, 36, 36);
     border-radius: 4px;
     padding-bottom: 15px;
+    background-color: var(--cards);
 }
 
 .card h3 {
     font-size: 1.2rem;
-    color: var(--purple);
+    color: var(--clear-text);
     margin-bottom: 15px;
+}
+
+.card p {
+    color: var(--colorText);
 }
 
 .card-content {
@@ -267,20 +295,21 @@ body {
 }
 
 .card a {
+    transition: .3s ease-in-out;
+    background-color: transparent;
+    border: 1px solid var(--bg-register);
+    color: var(--colorText);
     text-decoration: none;
-    font-weight: bold;
-    color: white;
-    border: 1px solid var(--purple);
-    background-color: var(--purple);
     padding: 3px 12px;
     border-radius: 20px;
+    font-weight: bold;
+    font-size: small;
+    border: 2px solid var(--bg-register);
 }
 
 .card a:hover {
-    transition: .3s ease-in-out;
-    background-color: transparent;
-    border: 1px solid var(--purple);
-    color: var(--purple);
+    color: var(--clear-text);
+    background-color: var(--bg-register);
 }
 /**/
 /* quarta section - dúvidas whatsapp */
@@ -290,7 +319,7 @@ body {
 #sct-4 h2 {
     font-size: 1.2rem;
     max-width: 90%;
-    color: var(--purple);
+    color: var(--clear-text);
     font-weight: bold;
     padding-bottom: 30px;
 }
@@ -312,7 +341,6 @@ body {
     padding: 10px 20px;
     border-radius: 20px;
     font-size: 16px;
-    font-weight: regular;
     text-decoration: none;
     transition: .3s ease-in-out;
 }
@@ -324,7 +352,7 @@ body {
 }
 /**/
 /* quinta section: segundo botão de reg */
-#sct-5 { background: rgb(125, 78, 244); }
+#sct-5 { background: var(--bg-register); }
 
 
 #sct-5 p {
@@ -365,11 +393,14 @@ body {
     margin: .5em 0 0 3em;
 }
 
-#sct-6 h3 { padding-bottom: 20px; }
+#sct-6 h3 {
+    padding-bottom: 20px; 
+    color: var(--purple);
+}
 
 #sct-6 a {
     text-decoration: none; 
-    color: var(--purple);
+    color: var(--colorText);
 }
 
 #sct-6 a:hover { opacity: 0.8; }
@@ -383,14 +414,38 @@ body {
 #social-media { margin-left: 10px; }
 
 .margin-footer { margin: 10px; }
+
+#footer-icons .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer-icons p {
+    margin-right: 20px;
+    color: hsla(0,0%,100%,.607);
+}
 /**/
 /**/
 /* início da página sobre advable */
 #sct-1-sobre {
-    background-color: var(--purple);
+    background-color: var(--bg-register);
     color: white;
     display: flex;
     font-size: 20px;
+}
+
+#sct-1-sobre h1 {
+    padding: 150px 0 120px 0;
+}
+/**/
+/* descrição sobre advable */
+#sct-2-sobre {
+    display: block;
+}
+
+#sct-2-sobre p {
+    margin: 50px;
 }
 /**/
 /* início da versão mobile */
@@ -456,34 +511,19 @@ body {
     margin: auto;
    }
 
-   .logo-footer-container div {
-    text-align: center;
-   }
    /**/
    /* menu footer */
-   #sct-6 div {
-    margin-bottom: 20px;
-   }
+   #sct-6 div { margin-bottom: 20px; }
 
-   #sct-6 {
-    margin: auto;
-    text-align: center;
-   }
+   #sct-6 h3 { padding-bottom: 10px; }
 
-   #sct-6 h3 {
-    padding-bottom: 10px;
-   }
+   .sct-6-container { margin-top: 20px; }
 
-   .sct-6-container div {
-    margin: 30px 2em 0 0;
-   }
+   .sct-6-container div { margin: 20px; }
 
    .logo-footer {
     margin: 2em 4em 0 4em;
     text-align: center;
-   }
-
-   .logo-footer p {
    }
    /**/
 
@@ -499,7 +539,13 @@ body {
    #footer-icons .container {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    padding-bottom: 30px;
    }
+
+   #social-media{ padding: 20px 0 0 0; }
+   
+   #footer-icons p { margin: 0; }
    /**/
 }
 /* fim da versão mobile */
@@ -522,7 +568,7 @@ body {
         position: fixed;
         top: 0;
         right: -200px;
-        background: white;
+        background: var(--bg-dark);
         width: 200px;
         height: 100%;
         padding-top: 65px;
@@ -539,7 +585,7 @@ body {
     }
 
     .menu li a {
-        color: var(--purple);
+        color: hsla(0,0%,100%,.607);
         padding-left: 30px;
     }
 
@@ -550,7 +596,7 @@ body {
 
     .navigation input:checked ~ .menu {
         right: 0;
-        box-shadow: 7px 0 25px rgb(152, 151, 153);
+        box-shadow: 7px 0 25px rgb(0, 0, 0);
     }
     /**/
     /* funções do software */
@@ -598,7 +644,7 @@ body {
 @media (min-width: 768px) {
     /* menu header */
     .menu li a {
-        color: var(--purple);
+        color: hsla(0,0%,100%,.607);
         text-decoration: none;
         display: block;
         padding: 15px 20px;
@@ -607,7 +653,7 @@ body {
     }
 
     .menu li a:hover {
-        box-shadow: 0 -3px 0px var(--purple) inset, 500px 0 0 rgb(251, 249, 255) inset;
+        box-shadow: 0 -3px 0px var(--purple) inset, 500px 0 0 #2e2b39 inset;
     }
     /**/
     /* section 1 (textos do início da página) */

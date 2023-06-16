@@ -11,17 +11,23 @@
 		<title>Advable</title>
 	</head>
 	<body>
-		<header class="border-bottom">
-			<nav class="container-fluid container">
-				<a class="logo-header" href="https://advable-mvp.herokuapp.com/"><img src="./imagens/logotipo.png" alt="Logotipo do software Advable">Advable</a>
-				<ul>
-					<li><a href="index.html">Início</a></li>
-					<li><a href="#">Sobre</a></li>
-					<li><a href="creditos.html">Preços</a></li>
-					<li><a href="contato.html">Contato</a></li>
-					<li><a href="https://advable-mvp.herokuapp.com/login"><strong>Acesso</strong></a></li>
-				</ul>
-			</nav>
+		<header class="header border-bottom">
+			<div class="container container-fluid">
+				<div class="logo">
+					<a class="logo-img" href="https://advable-mvp.herokuapp.com/"><img src="./imagens/logotipo.png" alt="">Advable</a>
+				</div>
+				<div class="navigation">
+					<input type="checkbox" class="toggle-menu">
+					<div class="hamburguer"></div>
+					<ul class="menu">
+						<li><a href="index.html">Início</a></li>
+						<li><a href="sobre.html">Sobre</a></li>
+						<li><a href="creditos.html">Preços</a></li>
+						<li><a href="contato.html">Contato</a></li>
+						<li><a href="https://advable-mvp.herokuapp.com/login"><strong>Acesso</strong></a></li>
+					</ul>
+				</div>
+			</div>
 		</header>
 		
 		<section id="sct-1-sobre" class="container-fluid">
@@ -30,35 +36,84 @@
       </div>
     </section>
 
-    <section id="sct-2-sobre">
-      <div><h2>test</h2></div>
-      <div><h2>test</h2></div>
-      <div><h2>test</h2></div>
-      
+    <section id="sct-2-sobre" class="container-fluid border-bottom bg-dark text-color">
+			<div class="container">
+				<div>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!</p>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!</p>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!</p>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!</p>
+				</div>
+			</div>
     </section>
 
-    <footer class="container-fluid">
-			<div class="container">
-				<div id="contacts">
+		<section>
+		</section>
+
+    <footer class="bg-dark text-color">
+			<!--container da logo dos direitos-->
+			<div class="border-bottom container-fluid">
+				<div id="footer-container" class=" container">
+						<div class="logo-footer">
+							<div class="logo-footer-container">
+								<div><img src="./imagens/logotipo.png" alt=""></div>
+									<p><strong>Advable</strong> oferece uma solução completa para otimizar o trabalho jurídico. Com recursos abrangentes e personalizáveis, simplificamos tarefas, melhoramos a eficiência e proporcionamos uma gestão eficaz para advogados e escritórios de advocacia.</p>
+							</div>
+						</div>
+					<!---->
+
+					<!-- menu do footer -->
+					<div id="sct-6" class="line-height"><!-- container !!! ver possibilidade de usar grid para mobile-->
+						
+						<div class="container sct-6-container">
+							<div>
+								<h3>Sobre nós</h3>
+								<ul> <!-- !!! fazer um menu pra mobile -->
+									<li><a href="#">Termos de uso</a></li>
+									<li><a href="#">Políticas de privacidade</a></li>
+									<li><a href="#">Sobre o advable</a></li>
+									<li><a href="#">Contatos</a></li>
+								</ul>
+							</div>
+							
+							<div>
+								<h3>Dúvidas e suporte</h3>
+								<ul>
+									<li><a href="#">sdaknmakekfih</a></li>
+									<li><a href="#">sdaknmak</a></li>
+									<li><a href="#">sdaknmakiuwd</a></li>
+								</ul>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- fim do container do menu do footer-->
+
+		<!-- icones do footer -->
+		<div id="footer-icons" class="container-fluid"> <!--ver possibilidade de mudar esse footer pra div -->
+			<div class="container"> <!--container-->
+				<nav id="social-media">
 					<ul>
 						<li class="margin-footer">
-							<a href="https://blog.advable.com.br/2023/01/inicio-da-jornada/"><img src="./imagens/logotipo.png" alt=""></a>
-						</li>
-						<li class="margin-footer">
-							<a href="#"><img src="./imagens/youtube.jpg" alt=""></a>
+							<a href="#"><img src="./imagens/youtube.png" alt=""></a>
 						</li>
 						<li class="margin-footer">
 							<a href="#"><img src="./imagens/twitter.png" alt=""></a>
 						</li>
 						<li class="margin-footer">
-							<a href="#"><img src="./imagens/insta.jpg" alt=""></a>
+							<a href="#"><img src="./imagens/insta.png" alt=""></a>
 						</li>
 					</ul>
-				</div>
-				<div>
-					<p>Todos os direitos reservados</p>
-				</div>
-			</div>
+				</nav>
+
+				<p>Todos os direitos reservados.</p>
+			</div><!---->
+		</div>
+		<!---->
 		</footer>
   </body>
 </html>
