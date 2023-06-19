@@ -3,7 +3,7 @@
 /* início dos estilos */
 :root {
     --bg-dark: #292634;
-    --bg-gray: #5f577c;
+    --bg-darker: #18161e;
     --purple: rgb(118, 72, 233);
     --clear-purple: rgb(202, 187, 236);
     --colorText: hsla(0,0%,100%,.607);
@@ -73,6 +73,25 @@ li { list-style: none; }
     color: white;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
+
+.btn-2 {
+    background: transparent;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.btn-2:hover {
+    text-decoration: none;
+    font-size: 17px;
+    color: var(--clearText);
+    background-color: var(--purple);
+    padding: 20px 100px;
+    border: 2px solid var(--purple);
+    border-radius: 20px;
+    font-weight: bold;
+    transition: .3s ease-in-out;
+}
+
 /**/
 /* final dos estilos*/
 
@@ -103,13 +122,31 @@ body {
     justify-content: space-between;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
 .logo a {
     color: var(--clearText);
     font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 .logo a:hover {
-    color: var(--purple);
+    color: var(--clearText);
+    background-color: var(--purple);
+    padding: 5px 13px 5px 13px;
+    border-radius: 15px;
+    margin-left: 7px;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
 }
 
 .menu .acesso {
@@ -118,26 +155,6 @@ body {
 
 .menu .acesso:hover {
     color: var(--purple);
-}
-
-.logo-img {
-    display: flex;
-    align-items: center;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo a {
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.logo-img img {
-    max-width: 40px;
-    padding-right: 5px;
 }
 
 .navigation {
@@ -362,7 +379,7 @@ body {
 }
 /**/
 /* quinta section: segundo botão de registro */
-#sct-5 { background: var(--bg-gray); }
+#sct-5 { background: var(--bg-darker); }
 
 
 #sct-5 p {
@@ -438,7 +455,7 @@ body {
 /**/
 /* início da página sobre advable */
 #sct-1-sobre {
-    background-color: var(--bg-gray);
+    background-color: var(--bg-darker);
     color: white;
     display: flex;
     font-size: 20px;
@@ -463,9 +480,16 @@ body {
     body {
         font-size: small;
     }
+
+    .logo-img {
+        max-width: 40px;
+    }
+
+    .logo-title {
+        display: none;
+    }
     
     .mobile {
-        /* display: flex; */
         flex-direction: column;
         justify-content: center;
     }
@@ -563,6 +587,23 @@ body {
 /* início da versão tablet */
 @media (max-width: 768px) {
     /* menu header */
+
+    .logo-img {
+        max-width: 40px;
+    }
+
+    /* .logo-img:hover {
+        padding: 0;
+    } */
+
+    .logo-title {
+        display: none;
+    }
+
+    /* .logo-title:hover {
+        padding: 0;
+    } */
+
     .hamburguer, .toggle-menu {
         display: block;
     }
@@ -653,6 +694,10 @@ body {
 /* início da versão desktop */
 @media (min-width: 768px) {
     /* menu header */
+    .logo-img{
+        display: none;
+    }
+
     .menu li a {
         color: hsla(0,0%,100%,.607);
         text-decoration: none;
