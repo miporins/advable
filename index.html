@@ -6,6 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
 		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="node_modules/wow.js/css/libs/animate.css">
+		<link rel="stylesheet" href="node_modules/wow.js/css/libs/css.css">
 		<link rel="icon" type="image/png" sizes="32x32" href="./imagens/logotipo.png">
 		<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
 		
@@ -53,42 +55,42 @@
 			<h2>Algumas das diversas funcionalidades para melhorar sua rotina:</h2>
 
 			<div class="functions container text-align"><!--container-->
-				<div>
+				<div class=" wow flipInX center">
 					<img src="./imagens/sino.png" alt="">
 					<h3>Acompanhamento de processos</h3>
 					<br>
 					<p>Receba notificações para acompanhar as movimentações dos seus processos.</p>
 				</div>
 
-				<div>
+				<div  class="wow flipInX center">
 					<img src="https://cdn-icons-png.flaticon.com/512/10473/10473587.png" alt="">
 					<h3>Gerencie compromissos</h3>
 					<br>
 					<p>Nesta função, você pode administrar seus compromissos.</p>
 				</div>
 				
-				<div>
+				<div class=" wow flipInX center">
 					<img src="https://cdn-icons-png.flaticon.com/512/2779/2779818.png" alt="">
 					<h3>Visualize estatísticas</h3>
 					<br>
 					<p>Acompanhe estatísticas soidhjaodhj asdofhuisdfdisufhsid asuidjsdfbn ashjdbasjk blablablasodih</p>
 				</div>
 
-				<div>
+				<div class="wow flipInX center">
 					<img src="./imagens/financas.png" alt="">
 					<h3>Administre suas finanças</h3>
 					<br>
 					<p>Organize as finanças do seu escritório, criando previsões de receitas e despesas.</p>
 				</div>
 
-				<div>
+				<div class="wow flipInX center">
 					<img src="./imagens/online.png" alt="">
 					<h3>Organizanize e gerencie</h3>
 					<br>
 					<p>Organize e administre pessoas, tarefas e responsáveis tudo de forma associada</p>
 				</div>
 				
-				<div>
+				<div class="wow flipInX center">
 					<img src="./imagens/doc.png" alt="">
 					<h3>Gerador de documentos jurídicos</h3>
 					<p id="badge" class="badge badge-yellow">Em breve</p>
@@ -145,7 +147,7 @@
 		<!-- quarta section: dúvidas no whatsapp -->
 		<section id="sct-4" class="container-fluid text-align bg-dark">
 			<div id="duvidas" class="container mobile"><!--container -!!! ver possibilidade de usar grid aqui-->
-				<div><img class="duvidas-img" src="./imagens/multitaskk.png" alt=""></div>  
+				<div><img class="duvidas-img wow flipInX center center" src="./imagens/multitaskk.png" alt=""></div>  
 				
 				<div class="duvidas-contato">
 					<h2 class="line-height">Dúvidas? Podemos ajudar!</h2>
@@ -233,5 +235,9 @@
 		<!---->
 		</footer>
 		<!--fim do footer-->
+		<script src="/node_modules/wow.js/dist/wow.min.js"></script>
+		<script>
+			new WOW().init();
+		</script>
 	</body>
 	</html>
