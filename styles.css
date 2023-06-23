@@ -4,15 +4,26 @@
 :root {
     --bg-dark: #292634;
     --bg-darker: #18161e;
+    --bg-light: #f2f2f2;
+    --bg-lighter: #ffffff;
     --purple: rgb(118, 72, 233);
     --clear-purple: rgb(202, 187, 236);
-    --colorText: hsla(0,0%,100%,.607);
-    --clearText: #d2cfde;
-    --cards: hsla(260, 6%, 30%, 0.86);
-  }
+    --colorText: hsla(0,0%,0%,.607);
+    --colorTextDark: #ffffff;
+    --clearTextDark: hsla(0,0%,100%,.607);
+    --clearText: #2d2d2d;
+    --cards: hsla(260, 6%, 70%, 0.86);
+    --cards-dark: #4b4851db;
+    --light-bg-dark: #f2f2f2;
+    --light-cards: hsla(0, 0%, 100%, 0.86);
+    --text-shadow-light: 1px 1px 1px rgba(255, 255, 255, 0.5);
+    --text-shadow-dark: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    --border-bottom-dark: 1px solid rgb(62, 62, 62);
+        /* suas outras variáveis */
+}
 
-.bg-dark {
-    background-color: var(--bg-dark);
+.bg-light {
+    background-color: var(--bg-light);
 }
 
 .text-color { color: var(--colorText); }
@@ -23,14 +34,14 @@ li { list-style: none; }
 
 .text-align { text-align: center; }
 
-.text-shadow { text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
+.text-shadow { text-shadow: --texto-shadow-light; }
 
-.border-bottom { border-bottom: 1px solid rgb(62, 62, 62); }
+.border-bottom { border-bottom: 1px solid rgb(192, 192, 192); }
 
 .bg-primary { background-image: radial-gradient(circle at 50% -20.71%, #bb49bb 0, #a64ee0 25%, #7d4ef4 50%, #2a30c5 75%, #122e8a 100%); }
 
 .badge {
-    color: white;
+    color: black;
     border-radius: 20px;
     font-size: 12px;
     font-weight: bold;
@@ -40,6 +51,7 @@ li { list-style: none; }
     background-color: rgb(255, 204, 0);
     color: black;
 }
+
 
 #badge { 
     max-width: 80px;
@@ -113,7 +125,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--bg-dark);
+    background-color: var(--light-bg-dark);
     transition: 0.3s;
 }
 
@@ -297,7 +309,7 @@ body {
     box-shadow: 3px 3px 10px rgb(37, 36, 36);
     border-radius: 4px;
     padding-bottom: 15px;
-    background-color: var(--cards);
+    background-color: var(--light-cards);
 }
 
 .card h3 {
@@ -379,11 +391,11 @@ body {
 }
 /**/
 /* quinta section: segundo botão de registro */
-#sct-5 { background: var(--bg-darker); }
+#sct-5 { background: var(--light-bg-dark); }
 
 
 #sct-5 p {
-    color: white;
+    color: gray;
     font-size: 1.3rem;
     font-weight: bold;
 }

@@ -1,0 +1,127 @@
+
+body.dark {
+  background-color: var(--bg-dark);
+  color: var(--colorTextDark);
+}
+
+body.dark #sct-5 {
+  background-color: var(--bg-darker);
+}
+body.dark #sct-5 p {
+  color: var(--colorTextDark);
+}
+
+body.dark .border-bottom {
+  border-bottom: var(--border-bottom-dark);
+}
+
+body.dark .text-shadow { text-shadow: --texto-shadow-dark; }
+
+body.dark .text-color {
+  color: var(--clearTextDark);
+}
+
+body.dark .functions h3, h2 {
+  color: var(--colorTextDark);
+}
+
+body.dark .functions p {
+  color: var(--clearTextDark);
+}
+
+body.dark h2 {
+  color: var(--clearTextDark);
+}
+
+body.dark h3 {
+  color: var(--colorTextDark);
+}
+
+body.dark .header {
+  background-color: var(--bg-dark);
+}
+
+body.dark .card {
+  background-color: var(--cards-dark);
+}
+
+body.dark .buttons {
+  color: var(--purple);
+  border-color: var(--clearTextDark);
+}
+
+body.dark .buttons:hover {
+  color: var(--colorTextDark);
+  /* background-color: var(--clearTextDark); */
+}
+
+body.dark .btn-2 {
+  color: var(--colorTextDark);
+  /* background-color: var(--purple); */
+  border-color: var(--colorTextDark);
+}
+
+body.dark .btn-2:hover {
+  color: var(--colorTextDark);
+  background: var(--purple);
+  border-color: var(--purple);
+}
+
+body.dark .badge-yellow {
+  color: var(--bg-dark);
+}
+
+body.dark .logo a, body.dark .menu .acesso {
+  color: var(--clearTextDark);
+}
+
+body.dark .logo a:hover {
+  color: var(--clearTextDark);
+  background-color: var(--purple);
+}
+
+body.dark .hamburguer, body.dark .hamburguer:before, body.dark .hamburguer:after {
+  background: var(--clearTextDark);
+}
+
+body.dark .titles, body.dark .registro, body.dark #sct-2, body.dark #sct-3, body.dark #sct-4, body.dark #sct-5 {
+  color: var(--colorTextDark);
+}
+
+
+body.dark #sct-6 a {
+  color: var(--colorTextDark);
+}
+
+body.dark #footer-icons p {
+  color: var(--colorTextDark);
+}
+
+body.dark #sct-1-sobre {
+  background-color: var(--bg-darker);
+  color: var(--clearTextDark);
+}
+body.dark #sct-4 h2 {
+  color: var(--clearTextDark);
+}
+body.dark .card a {
+  color: var(--clearTextDark);
+  border-color: var(--purple);
+}
+
+body.dark .card p {
+  color: var(--clearTextDark);
+}
+
+body.dark .card a:hover {
+  color: var(--clearTextDark);
+  background-color: var(--purple);
+}
+
+body.dark .badge {
+  color: var(--bg-dark);
+}
+
+body.dark .logo a:hover {
+  background-color: var(--purple);
+}
