@@ -26,6 +26,12 @@
     background-color: var(--bg-light);
 }
 
+.access-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
 .text-color { color: var(--colorText); }
 
 li { list-style: none; }
@@ -50,6 +56,14 @@ li { list-style: none; }
     border-bottom: 3px solid #4e4e4e;
  }
 
+.bg-image-2 { 
+    background-image: url(./imagens/happy-lawyer.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+ }
+
 .badge {
     color: black;
     border-radius: 20px;
@@ -69,6 +83,10 @@ li { list-style: none; }
 }
 /* display do body */
 .container-fluid { width: 100%; }
+
+.d-flex {
+    display: flex;
+}
 
 .container {
     max-width: 987px;
