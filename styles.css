@@ -38,7 +38,17 @@ li { list-style: none; }
 
 .border-bottom { border-bottom: 1px solid rgb(192, 192, 192); }
 
-.bg-primary { background-image: radial-gradient(circle at 50% -20.71%, #bb49bb 0, #a64ee0 25%, #7d4ef4 50%, #2a30c5 75%, #122e8a 100%); }
+.bg-primary { background-color: var(--bg-darker);  }
+
+.bg-image { 
+    background-image: url(./imagens/bg-woman-dark.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--bg-darker);
+    min-height: 80vh;
+    border-bottom: 3px solid #4e4e4e;
+ }
 
 .badge {
     color: black;
