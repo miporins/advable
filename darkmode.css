@@ -1,4 +1,8 @@
 
+body.dark .bg-main {
+  background-image: url(./imagens/bg-main-dark.jpg);
+}
+
 body.dark {
   background-color: var(--bg-dark);
   color: var(--colorTextDark);
@@ -20,10 +24,10 @@ body.dark .text-shadow { text-shadow: --texto-shadow-dark; }
 body.dark .text-color {
   color: var(--clearTextDark);
 }
-
+/* 
 body.dark .functions h3, h2 {
   color: var(--colorTextDark);
-}
+} */
 
 body.dark .functions p {
   color: var(--clearTextDark);
@@ -46,13 +50,14 @@ body.dark .card {
 }
 
 body.dark .buttons {
-  color: var(--purple);
-  border-color: var(--clearTextDark);
+  color: var(--colorTextDark);
+  border-color: var(--purple);
+  background-color: var(--purple);
 }
 
 body.dark .buttons:hover {
   color: var(--colorTextDark);
-  /* background-color: var(--clearTextDark); */
+  background-color: var(--bg-dark);
 }
 
 body.dark .btn-2 {

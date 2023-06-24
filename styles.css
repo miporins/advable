@@ -46,6 +46,16 @@ li { list-style: none; }
 
 .bg-primary { background-color: var(--bg-darker);  }
 
+.bg-main{
+    background-image: url(./imagens/bg-light-main.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-color: var(--bg-darker); */
+    min-height: 80vh;
+    border-bottom: 1px solid rgb(192, 192, 192);
+}
+
 .bg-image { 
     background-image: url(./imagens/bg-woman-dark.png);
     background-position: center;
@@ -99,19 +109,20 @@ li { list-style: none; }
 .buttons {
     text-decoration: none;
     font-size: 17px;
-    color: var(--purple);
-    background-color: white;
+    color: var(--colorTextDark);
+    background-color: var(--purple);
     padding: 20px 100px;
-    border: 2px solid white;
-    border-radius: 20px;
+    border: 2px solid var(--purple);
+    border-radius: 10px;
     font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     transition: .3s ease-in-out;
 }
 
 .buttons:hover {
-    background: transparent;
-    color: white;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    background: white;
+    color: var(--purple);
+    text-shadow: none;
 }
 
 .btn-2 {
@@ -153,7 +164,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--light-bg-dark);
+    background-color: var(--bg-lighter);
     transition: 0.3s;
 }
 
@@ -276,7 +287,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: auto;
-    color: white;
+    color: var(--colorText);
 }
 
 .titles h1 {
