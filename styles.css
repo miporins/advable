@@ -299,6 +299,40 @@ body {
 
 .registro { padding-bottom: 70px; }
 
+/* inicio da section de descrição */
+#sct-dsc {
+    display: block;
+    padding: 70px 2rem;
+    color: var(--clearTextDark);
+}
+
+.h-wrap {
+    padding-bottom: 40px;
+}
+
+.h-wrap h1 {
+    font-size: 25px;
+    color: var(--colorTextDark);
+}
+
+.h-wrap p {
+    font-size: larger;
+}
+
+.h-wrap h1 {
+    margin: 15px 0;
+}
+
+.p-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-top: 20px;
+    line-height: 1.5rem;
+}
+
+/**/
+
 /* inicio da segunda section (funções do software)*/
 #sct-2 {
     padding: 90px 0 50px 0;
@@ -318,7 +352,6 @@ body {
 
 .functions div, #cards { padding: 40px; }
 
-.functions h3, h2 { color: var(--clearText); }
 /**/
 /* inicio da terceira section (diário de dev) */
 #sct-3 { padding: 50px 0 70px 0; }
@@ -532,6 +565,11 @@ body {
         font-size: small;
     }
 
+    .mobile {
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .logo-img {
         max-width: 40px;
     }
@@ -539,15 +577,19 @@ body {
     .logo-title {
         display: none;
     }
-    
-    .mobile {
-        flex-direction: column;
-        justify-content: center;
-    }
 
     #sct-1 {
         height: 100vh;
         width: 100%;
+    }
+
+    #sct-dsc {
+        text-align: center;
+    }
+
+    .p-wrap {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 
     .functions {

@@ -24,17 +24,17 @@ body.dark .text-shadow { text-shadow: --texto-shadow-dark; }
 body.dark .text-color {
   color: var(--clearTextDark);
 }
-/* 
+
 body.dark .functions h3, h2 {
   color: var(--colorTextDark);
-} */
+}
 
 body.dark .functions p {
   color: var(--clearTextDark);
 }
 
 body.dark h2 {
-  color: var(--clearTextDark);
+  color: var(--colorTextDark);
 }
 
 body.dark h3 {
