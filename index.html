@@ -26,11 +26,11 @@
 					<input type="checkbox" class="toggle-menu">
 					<div class="hamburguer"></div>
 					<ul class="menu">
-						<li><a href="#sct-1">Início</a></li>
-						<li><a href="sobre.html">Sobre</a></li>
-						<li><a href="creditos.html">Preços</a></li>
-						<li><a href="contato.html">Contato</a></li>
-						<li><a href="https://advable-mvp.herokuapp.com/login" class="acesso"><strong>Acesso</strong></a></li>
+						<li><a href="#sct-1" class="menu-links">Início</a></li>
+						<li><a href="sobre.html" class="menu-links">Sobre</a></li>
+						<li><a href="creditos.html" class="menu-links">Preços</a></li>
+						<li><a href="contato.html" class="menu-links">Contato</a></li>
+						<li class="acesso-li"><a href="https://advable-mvp.herokuapp.com/login" class="acesso"><strong>Acesso</strong></a></li>
 					</ul>
 				</div>
 			</div>
@@ -51,18 +51,18 @@
 			</div> <!-- fim do container -->
 		</section>
 
-		<section id="sct-dsc" class="container">
-			<div class="h-wrap border-bottom">
-				<h1>Advable</h1>
-				<p>O único software jurídico necessário para acompanhar processos.</p>
-			</div>
-			<br>
-			
+		<section id="sct-dsc" class="container-fluid border-bottom">
+			<div class="container">
+				<div class="h-wrap border-bottom">
+					<h1>Advable</h1>
+					<p>O único software jurídico necessário para acompanhar processos.</p>
+				</div>
+				
+				<div class="p-wrap">
+					<p><strong>Advable</strong> é uma ferramenta indispensável para advogados e escritórios de advocacia que desejam otimizar suas rotinas e melhorar a eficiência de suas tarefas jurídicas. Ele conta com acompanhamento de processos judiciais de forma <strong>automatizada</strong>, fornecendo atualizações em tempo real e facilitando o gerenciamento de informações.</p>
 
-			<div class="p-wrap">
-				<p><strong>Advable</strong> é uma ferramenta indispensável para advogados e escritórios de advocacia que desejam otimizar suas rotinas e melhorar a eficiência de suas tarefas jurídicas. O software conta com acompanhamento de processos judiciais de forma <strong>automatizada</strong>, fornecendo atualizações em tempo real e facilitando o gerenciamento de informações.</p>
-
-				<p>Além disso, o software oferece análises estatísticas detalhadas, permitindo que os usuários identifiquem padrões, tendências e desempenho em suas atividades, o que auxilia na tomada de decisões estratégicas e melhora a produtividade do escritório como um todo. Assim, advogados poderão concentrar-se em suas atividades essenciais, economizando tempo e recursos valioso.</p>
+					<p>O software também oferece análises estatísticas detalhadas, ajudando os usuários a identificar padrões, tendências e desempenho. Sendo assim, a ferramenta auxilia melhorando a produtividade do escritório, permitindo que os advogados se concentrem em suas atividades essenciais, economizando tempo e recursos valiosos.</p>
+				</div>
 			</div>
 		</section>
 
@@ -74,35 +74,35 @@
 				<div class=" wow flipInX center">
 					<img src="./imagens/sino.png" alt="">
 					<h3>Acompanhamento de processos</h3>
-					<br>
+					<hr class="underline-purple">
 					<p>Receba notificações para acompanhar as movimentações dos seus processos.</p>
 				</div>
 
 				<div  class="wow flipInX center">
 					<img src="https://cdn-icons-png.flaticon.com/512/10473/10473587.png" alt="">
 					<h3>Gerencie compromissos</h3>
-					<br>
+					<hr class="underline-purple">
 					<p>Nesta função, você pode administrar seus compromissos.</p>
 				</div>
 				
 				<div class=" wow flipInX center">
 					<img src="https://cdn-icons-png.flaticon.com/512/2779/2779818.png" alt="">
 					<h3>Visualize estatísticas</h3>
-					<br>
+					<hr class="underline-purple">
 					<p>Acompanhe estatísticas soidhjaodhj asdofhuisdfdisufhsid asuidjsdfbn ashjdbasjk blablablasodih</p>
 				</div>
 
 				<div class="wow flipInX center">
 					<img src="./imagens/financas.png" alt="">
 					<h3>Administre suas finanças</h3>
-					<br>
+					<hr class="underline-purple">
 					<p>Organize as finanças do seu escritório, criando previsões de receitas e despesas.</p>
 				</div>
 
 				<div class="wow flipInX center">
 					<img src="./imagens/online.png" alt="">
 					<h3>Organizanize e gerencie</h3>
-					<br>
+					<hr class="underline-purple">
 					<p>Organize e administre pessoas, tarefas e responsáveis tudo de forma associada</p>
 				</div>
 				
@@ -110,7 +110,7 @@
 					<img src="./imagens/doc.png" alt="">
 					<h3>Gerador de documentos jurídicos</h3>
 					<p id="badge" class="badge badge-yellow">Em breve</p>
-					<br>
+					<hr class="underline-purple">
 					<p>Gere documentos e utilize <strong>Inteligência Artificial</strong> para aprimorar sua escrita.</p>
 				</div>
 			</div><!--fim do container-->
@@ -131,7 +131,7 @@
 		</section>
 		<!---->
 		<!-- terceira section: diário de desenvolvimento -->
-		<section id="sct-3" class="border-bottom container-fluid text-align line-height bg-dark"> 
+		<section id="sct-3" class="container-fluid text-align line-height bg-dark"> 
 			<div id="cards"><!-- container da sct-3 -->
 				<h2>Para saber mais detalhes, acompanhe nosso diário de desenvolvimento:</h2>
 				<!-- início dos cards -->
@@ -222,6 +222,28 @@
 							</div>
 							
 						</div>
+
+						<div class="menu-footer-mobile">
+							<details>
+								<summary>Sobre nós</summary>
+								<ul> <!-- !!! fazer um menu pra mobile -->
+									<li><a href="#">Termos de uso</a></li>
+									<li><a href="#">Políticas de privacidade</a></li>
+									<li><a href="#">Sobre Advable</a></li>
+									<li><a href="#">Contatos</a></li>
+								</ul>
+							</details>
+
+							<details>
+								<summary>Dúvidas e suporte</summary>
+								<ul>
+									<li><a href="#">sdaknmakekfih</a></li>
+									<li><a href="#">sdaknmak</a></li>
+									<li><a href="#">sdaknmakiuwd</a></li>
+								</ul>
+							</details>
+						</div>
+
 					</div>
 				</div>
 			</div>
