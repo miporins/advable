@@ -67,14 +67,6 @@ li { list-style: none; }
     border-bottom: 3px solid #4e4e4e;
  }
 
-.bg-image-2 { 
-    background-image: url(./imagens/happy-lawyer.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    min-height: 80vh;
- }
-
 .badge {
     color: black;
     border-radius: 20px;
@@ -189,7 +181,7 @@ body {
 
 .logo a:hover {
     color: var(--colorTextDark);
-    background-color: var(--purple);
+    background: var(--purple);
     padding: 6px 13px 6px 13px;
     border-radius: 15px;
     margin-left: 7px;
@@ -222,7 +214,7 @@ body {
     border-radius: 3px;
     padding: 11px 17px;
     transition: 0.3s;
-    margin-left: 25px;
+    margin: 0 2rem 0 25px;
 }
 
 .acesso:hover {
@@ -308,8 +300,8 @@ body {
     padding: 200px 0 120px 0;
     display: flex;
     flex-direction: column;
-    margin: auto;
     color: var(--colorText);
+    margin: 0 2rem 0 2rem;
 }
 
 .titles h1 {
@@ -363,14 +355,19 @@ body {
 
 /* inicio da segunda section (funções do software)*/
 #sct-2 {
-    padding: 70px 0 40px 0;
+    padding: 60px 0;
     text-align: center;
+}
+
+#sct-2 h2 {
+    margin: 0 2rem;
 }
 
 .functions {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 50px 0 30px 0;
+    padding: 80px 2rem 30px 2rem;
+    gap: 50px;
 }
 
 .functions img {
@@ -382,7 +379,7 @@ body {
     margin-top: 10px;
 }
 
-.functions div, #cards { padding: 40px; }
+#cards { padding: 40px; }
 
 hr { border-color: transparent; }
 
@@ -400,7 +397,7 @@ hr { border-color: transparent; }
 
 /**/
 /* inicio da terceira section (diário de dev) */
-#sct-3 { padding: 50px 0 70px 0; }
+#sct-3 { padding: 30px 0 40px 0; }
 
 #cards h2 {
     max-width: 500px;
@@ -474,7 +471,7 @@ hr { border-color: transparent; }
     padding: 50px 0 50px 0;
 }
 
-.duvidas-img { max-width: 600px; }
+.duvidas-img { max-width: 500px; }
 
 #sct-4 h2 {
     font-size: 1.2rem;
@@ -514,7 +511,6 @@ hr { border-color: transparent; }
 /* quinta section: segundo botão de registro */
 #sct-5 { background: var(--light-bg-dark); }
 
-
 #sct-5 p {
     color: gray;
     font-size: 1.3rem;
@@ -526,10 +522,11 @@ hr { border-color: transparent; }
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 40px 0 20px 0;
+    padding: 40px 0 25px 0;
 }
 /**/
 /** footer **/
+
 #footer-container p {
     line-height: 1.5;
 }
@@ -537,6 +534,7 @@ hr { border-color: transparent; }
 #footer-container {
     display: grid;
     grid-template-columns: repeat(2 , 1fr);
+    margin: auto;
 }
 
 .logo-footer-container img {
@@ -544,7 +542,7 @@ hr { border-color: transparent; }
     margin: 0 .5em 1.5em 0;
 }
 
-.logo-footer-container { margin: 2rem 2.5rem 2rem 1rem; }
+.logo-footer-container { margin: 50px 2rem; }
 
 #sct-6 {
     display: flex;
@@ -573,20 +571,17 @@ hr { border-color: transparent; }
 
 #social-media li { display: inline-block; }
 
-#social-media{ padding: 20px 0 20px 0; }
-
-#social-media { margin-left: 10px; }
-
 .margin-footer { margin: 10px; }
 
 #footer-icons .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: auto;
+    padding: 2rem;
 }
 
 #footer-icons p {
-    margin-right: 20px;
     color: hsla(0,0%,100%,.607);
 }
 /**/
@@ -624,12 +619,20 @@ hr { border-color: transparent; }
         justify-content: center;
     }
 
+    .d-flex {
+        text-align: center;
+    }
+
     .logo-img {
         max-width: 40px;
     }
 
     .logo-title {
         display: none;
+    }
+
+    .bg-main, .bg-image {
+        background-position: initial;
     }
 
     #sct-1 {
@@ -696,6 +699,10 @@ hr { border-color: transparent; }
     margin: auto;
    }
 
+   #footer-icons .container {
+    margin: 0;
+    padding: 0;
+   }
    /**/
    /* menu footer */
 
@@ -710,7 +717,7 @@ hr { border-color: transparent; }
    }
 
    .menu-footer-mobile summary {
-    font-size: large;
+    font-size: larger;
     color: var(--colorTextDark);
    }
 
@@ -746,26 +753,19 @@ hr { border-color: transparent; }
 /* início da versão tablet */
 @media (max-width: 768px) {
     /* menu header */
-
     .logo-img {
         max-width: 40px;
     }
 
     .logo a:hover {
         color: none;
-        background: none;
         padding: 0;
-        border-radius: 0;
         margin: 0;
     }
 
     .logo-title {
         display: none;
     }
-
-    /* .logo-title:hover {
-        padding: 0;
-    } */
 
     .hamburguer, .toggle-menu {
         display: block;
@@ -776,6 +776,7 @@ hr { border-color: transparent; }
     }
 
     .menu {
+        text-align: center;
         justify-content: start;
         flex-direction: column;
         align-items: center;
@@ -783,7 +784,7 @@ hr { border-color: transparent; }
         top: 0;
         right: -200px;
         background: var(--bg-dark);
-        width: 140px;
+        width: 110px;
         height: 100%;
         padding-top: 65px;
     }
@@ -801,18 +802,33 @@ hr { border-color: transparent; }
 
     .acesso-li {
         padding-top: 30px;
+        text-align: center;
+    }
+
+    .acesso {
+        margin-left: 0;
     }
 
     .navigation input:checked ~ .menu {
         right: 0;
         box-shadow: 7px 0 25px rgb(0, 0, 0);
     }
-
     /**/
+
+    /* backgrounds */
+    .bg-main, .bg-image {
+        background-position: initial;
+    }
+
+    .titles {
+        text-align: center;
+        padding-top: 200px;
+    }
+    /**/
+
     /* funções do software */
     .functions {
-        padding: 20px 0 30px 0;
-        /* display: grid; */
+        padding: 80px 2rem 30px 2rem;
         grid-template-columns: 1fr 1fr;
       }
     /**/
@@ -829,6 +845,12 @@ hr { border-color: transparent; }
     /* quarta section (whatsapp dúvidas) */
     .duvidas-img { max-width: 400px; }
 
+    #duvidas { display: block; }
+
+    .duvidas-contato {
+        margin: 50px 2rem 20px 2rem;
+    }
+
     /**/
     /* footer */
     #footer-icons .container {
@@ -843,16 +865,17 @@ hr { border-color: transparent; }
 
     .menu-footer-mobile {
         margin: 40px auto 30px;
-        }
-    
-        .menu-footer-mobile details {
+    }
+
+    .menu-footer-mobile details {
         margin-bottom: 15px;
-        }
-    
-        .menu-footer-mobile summary {
-        font-size: large;
+    }
+
+    .menu-footer-mobile summary {
+        font-size: larger;
+        font-weight: bold;
         color: var(--colorTextDark);
-        }
+    }
 
     #social-media img { max-width: 22px; }
 
@@ -869,6 +892,7 @@ hr { border-color: transparent; }
     /* section 1 (textos do início da página) */
     .titles {
         padding: 200px 0 160px 0;
+        max-width: 40%;
     }
     /**/
     /* cards */
