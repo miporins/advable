@@ -8,12 +8,85 @@ body.dark {
   color: var(--colorTextDark);
 }
 
+body.dark .logo a {
+  color: var(--colorTextDark);
+}
+
+body.dark .menu-links { 
+  color: var(--clearTextDark);
+}
+
+body.dark .acesso {
+  background-color: var(--bg-dark);
+  color: var(--colorTextDark);
+}
+
+body.dark .acesso:hover {
+  background-color: var(--purple);
+  color: var(--colorTextDark);
+}
+
+body.dark .menu-links:hover {
+  box-shadow: 0 -3px 0px var(--purple) inset, 500px 0 0 var(--bg-dark) inset;
+  color: var(--colorTextDark);
+}
+
+body.dark .menu {
+  background: var(--bg-dark);
+}
+
+body.dark .titles {
+  color: var(--colorTextDark);
+}
+
+body.dark #sct-dsc {
+  color: var(--clearTextDark);
+}
+
+body.dark .h-wrap h1 {
+  color: var(--colorTextDark);
+}
+
+body.dark #sct-2 h2 {
+  color: var(--colorTextDark);
+}
+
+body.dark #sct-2 h3 {
+  color: var(--colorTextDark);
+}
+
+body.dark #duvidas .duvidas-img-light {
+  display: none;
+}
+
 body.dark #sct-5 {
   background-color: var(--bg-darker);
 }
 
 body.dark #sct-5 p {
   color: var(--colorTextDark);
+}
+
+body.dark summary {
+  color: var(--colorTextDark);
+}
+
+body.dark #sct-6 h3 {
+  color: var(--colorTextDark);
+}
+
+body.dark #sct-6 a {
+  color: var(--colorTextDark);
+}
+
+body.dark #sct-6 a:hover { color: var(--colorTextDark); }
+
+body.dark #sct-6 a {
+  color: var(--clearTextDark);
+}
+
+body.dark #footer-icons p {
+  color: var(--clearTextDark);
 }
 
 body.dark .border-bottom {
@@ -48,6 +121,19 @@ body.dark .header {
 
 body.dark .card {
   background-color: var(--cards-dark);
+  box-shadow: 3px 3px 10px rgb(37, 36, 36);
+}
+
+body.dark .card p {
+  color: var(--colorTextDark);
+}
+
+body.dark .card a:hover {
+  color: var(--clearText);
+}
+
+body.dark #cards h2 {
+  color: var(--colorTextDark);
 }
 
 body.dark .buttons {
@@ -64,15 +150,11 @@ body.dark .buttons:hover {
 
 body.dark .logo a:hover {
   color: var(--colorTextDark);
-  background-color: var(--purple);
+  /* background-color: var(--purple); */
 }
 
 body.dark .hamburguer, body.dark .hamburguer:before, body.dark .hamburguer:after {
   background: var(--clearTextDark);
-}
-
-body.dark .titles, body.dark .registro, body.dark #sct-2, body.dark #sct-3, body.dark #sct-4, body.dark #sct-5 {
-  color: var(--colorTextDark);
 }
 
 body.dark #sct-1-sobre {
