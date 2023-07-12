@@ -5,7 +5,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
-		<link rel="stylesheet" href="styles.css">
+		
+		<link id="styleSheet" rel="stylesheet" href="styles.css">
 		<link rel="stylesheet" href="darkmode.css">
 		<link rel="stylesheet" href="node_modules/wow.js/css/libs/animate.css">
 		<link rel="stylesheet" href="node_modules/wow.js/css/libs/css.css">
@@ -15,6 +16,7 @@
 		<title>Advable</title>
 	</head>
 	<body class="">
+		
 		<!-- inicio do menu -->
 		<header class="header border-bottom">
 			<div class="container container-fluid">
@@ -22,6 +24,7 @@
 					<a class="logo-title" href="https://advable-mvp.herokuapp.com/">advable</a>
 					<a href="https://advable-mvp.herokuapp.com/"><img class="logo-img" src="./imagens/logotipo.png" alt=""></a>
 				</div>
+
 				<div class="navigation">
 					<input type="checkbox" class="toggle-menu">
 					<div class="hamburguer"></div>
@@ -33,6 +36,7 @@
 						<li class="acesso-li"><a href="https://advable-mvp.herokuapp.com/login" class="acesso"><strong>Acesso</strong></a></li>
 					</ul>
 				</div>
+				<button onclick="toggleTheme()">Alternar Tema</button>
 			</div>
 		</header>
 		<!---->
@@ -279,5 +283,6 @@
 		<script>
 			new WOW().init();
 		</script>
+		<script src="/script.js"></script>
 	</body>
 	</html>
