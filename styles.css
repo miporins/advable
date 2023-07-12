@@ -148,7 +148,7 @@ li { list-style: none; }
 body {
     font-size: 14px;
     font-family: 'Maven Pro', sans-serif;
-    background-color: rgb(242, 243, 255);
+    background-color: rgb(245, 247, 255);
 }
 
 /* início do menu do header */
@@ -237,7 +237,7 @@ body {
     flex-direction: row;
     align-items: center;
     z-index: 1;
-    transition: 0.5s;
+    transition: 0.1s;
 }
 
 .hamburguer {
@@ -622,6 +622,46 @@ hr { border-color: transparent; }
     margin: 50px;
 }
 /**/
+
+/* inicio central de suporte */
+.bg-support {
+    background-image: url(./imagens/bg-suporte.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 100px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--clearText);
+}
+
+.search-box {
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 190px;
+}
+
+.search-container h1 {
+    margin-bottom: 30px;
+    border-bottom: solid 4px var(--purple);
+    border-radius: 4px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.search-container form {
+    border: 1px solid gray;
+    border-radius: 100px;
+    padding: 5px;
+}
+
+.search-container input {
+    font-size: 22px;
+}
+
 /* início da versão mobile */
 @media (max-width: 425px) {
     body {
