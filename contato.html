@@ -8,7 +8,8 @@
 		<link rel="stylesheet" href="styles.css">
 		<link rel="stylesheet" href="darkmode.css">
 		<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
-		
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
 		<title>Advable</title>
 	</head>
 	<body class="">
@@ -24,23 +25,42 @@
 					<ul class="menu">
 						<li><a href="index.html" class="menu-links">Início</a></li>
 						<li><a href="sobre.html" class="menu-links">Sobre</a></li>
-						<li><a href="creditos.html" class="menu-links">Preços</a></li>
-						<li><a href="contato.html" class="menu-links">Contato</a></li>
+						<li><a href="contato.html" class="menu-links">Central de suporte</a></li>
 						<li class="acesso-li"><a href="https://advable-mvp.herokuapp.com/login" class="acesso"><strong>Acesso</strong></a></li>
 					</ul>
 				</div>
 			</div>
 		</header>
 		<main>
-			<section class="container-fluid bg-support">
-				<div class="container search-container">
-					<div class="search-box">
-						<h1>Central de suporte</h1>
-						<form target="_blank">
-							O
-							<input type="text" placeholder="Faça uma busca ...">
-							<button type="submit">-></button>
-						</form>
+
+			<section class="container-fluid bg-support border-bottom">
+				<div class="search-header">
+					<h1>Central de suporte</h1>
+							<div class="search-bar">
+							<input type="search" placeholder="Faça uma pergunta ..." class="search-input">
+							<a href="#"><img src="./imagens/lupa-white.png" alt=""></a>
+						</div>
+				</div>
+			</section>
+
+			<section class="outros-artigos border-bottom">
+				<div class="container">
+					<h1 class="center-mobile">
+						Outros artigos úteis:
+					</h1>
+					<div class="artigos-container">
+						<div class="artigos-cards">
+							<h3>Diário de desenvolvimento</h3>
+							<p>Mais detalhes sobre o desenvolvimento do software</p>
+						</div>
+						<div class="artigos-cards">
+							<h3>Tutoriais</h3>
+							<p>Aprenda como utilizar a ferramenta</p>
+						</div>
+						<div class="artigos-cards">
+							<h3>Pacotes e créditos</h3>
+							<p>Conheça nossos planos e preços</p>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -127,6 +147,13 @@
 					</nav>
 
 					<p>Todos os direitos reservados.</p>
+
+					<button class="theme-btn" onclick="toggleTheme()">
+						<input type="checkbox" id="chk" class="theme-checkbox">
+						<label for="chk" class="switch">
+							<span class="slider"></span>
+						</label>
+					</button>
 				</div><!---->
 			</div>
 			<!---->

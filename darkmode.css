@@ -177,3 +177,46 @@ body.dark .card a:hover {
   color: var(--colorTextDark);
   background-color: var(--purple);
 }
+
+body.dark .artigos-cards {
+  padding: 40px;
+  line-height: 1.6;
+  box-shadow: 0 0 2px rgba(57, 57, 64, 0.402);
+  border-radius: 10px;
+  background-color: var(--cards-dark);
+  transition: 0.3s;
+}
+
+body.dark .artigos-cards:hover {
+  cursor: pointer;
+  box-shadow: 10px 30px 15px rgba(11, 11, 11, 0.915);
+}
+
+body.dark .artigos-cards h3 {
+  border-bottom: solid 2px var(--purple);
+}
+
+body.dark .artigos-cards p{
+  padding: 1.2rem 0;
+  color: var(--clearTextDark);
+}
+
+body.dark .search-input {
+  background-color: var(--cards-dark);
+}
+
+body.dark .search-header input::placeholder {
+  color: var(--clearTextDark);
+  opacity: 0.5;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+body.dark .search-header input:focus {
+  border-color: rgb(238, 235, 235);
+  box-shadow: 15px 10px 15px rgba(255, 255, 255, 0.402);
+  outline: none;
+}
+
+body.dark .search-header a:hover {
+  opacity: 0.9;
+}
