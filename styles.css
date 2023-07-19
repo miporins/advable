@@ -662,7 +662,7 @@ hr { border-color: transparent; }
 /**/
 
 /* inicio central de suporte */
-.bg-support {
+/* .bg-support {
     background-image: url(./imagens/bg-suporte.jpg);
     background-position: center;
     background-size: cover;
@@ -670,29 +670,48 @@ hr { border-color: transparent; }
     flex-grow: 1;
     flex-shrink: 0;
     padding: 150px;
+} */
+
+.bg-support {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
 }
+
+.bg-support img {
+    max-width: 400px;
+    margin: auto;
+}
+
+.search-header {
+    margin: 60px 2rem 0 0;
+}
+
+.center-search-header {
+    display: flex;
+    flex-direction: column;
+    }
 
 .search-header h1 {
     font-size: 30px;
     display: inline-block;
-    border-bottom: solid 2px;
+    border-bottom: solid 3px;
     border-color: var(--purple);
     color: var(--clearText);
-    line-height: 40px;
+    line-height: 50px;
 }
 
 .search-header div {
-    margin-top: 30px;
     display: flex;
-    justify-content: center;
 }
 
 
+
 .search-input {
-    width: 300px;
-    padding: 10px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    width: 400px;
+    padding: 10px 20px;
+    border-radius: 20px;
     border-style: none;
     background-color: var(--clear-purple);
     transition: 0.3s;
@@ -712,18 +731,18 @@ hr { border-color: transparent; }
 
 .search-header a {
     background-color: var(--purple);
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 20px;
     transition: 0.3s;
+    margin-left: 10px;
+    padding: 20px;
+    background-image: url(./imagens/lupa-white.png);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .search-header a:hover {
     opacity: 0.8;
-}
-
-.search-header img {
-    max-width: 40px;
-    color: white;
 }
 
 /* outros artigos */
@@ -731,6 +750,10 @@ hr { border-color: transparent; }
     display: flex;
     flex-direction: column;
     padding: 70px 2rem;
+}
+
+.artigos h1 {
+    color: var(--clearText);
 }
 
 .artigos-container {
@@ -744,7 +767,7 @@ hr { border-color: transparent; }
     border-color: var(--purple);
     padding: 40px;
     line-height: 1.6;
-    box-shadow: 0 0 2px rgb(159, 157, 163));
+    box-shadow: 0 0 2px rgb(159, 157, 163);
     border-radius: 10px;
     background-color: var(--light-cards);
     transition: 0.3s;
@@ -757,14 +780,21 @@ hr { border-color: transparent; }
 
 .artigos-cards h3 {
     border-bottom: solid 2px var(--purple);
+    color: var(--clearText);
 }
 
 .artigos-cards p{
     padding: 1.2rem 0;
+    color: var(--colorText);
 }
 
 .perguntas-container{
     margin: 70px 2rem;
+}
+
+.perguntas-container h1 {
+    color: var(--clearText);
+    padding-bottom: 2rem;
 }
 
 .perguntas summary {
@@ -773,6 +803,23 @@ hr { border-color: transparent; }
     margin-top: 15px;
     color: var(--clearText);
     font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: 0 0 1px rgb(159, 157, 163);
+}
+
+.perguntas-container summary:hover {
+    box-shadow: 6px 6px 5px rgb(214, 213, 217);
+}
+
+.perguntas .perguntas-container {
+    width: 100%;
+}
+
+.perguntas-container p {
+    padding: 2rem 2rem;
+    color: var(--colorText);
 }
 /* fim da página de suporte */
 
