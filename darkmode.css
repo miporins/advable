@@ -181,7 +181,7 @@ body.dark .card a:hover {
 body.dark .artigos-cards {
   padding: 40px;
   line-height: 1.6;
-  box-shadow: 0 0 2px rgba(57, 57, 64, 0.402);
+  box-shadow: 3px 3px 4px rgba(22, 22, 31, 0.402);
   border-radius: 10px;
   background-color: var(--cards-dark);
   transition: 0.3s;
@@ -189,7 +189,7 @@ body.dark .artigos-cards {
 
 body.dark .artigos-cards:hover {
   cursor: pointer;
-  box-shadow: 10px 30px 15px rgba(11, 11, 11, 0.915);
+  box-shadow: 10px 10px 10px rgba(28, 23, 33, 0.915);
 }
 
 body.dark .artigos-cards h3 {
@@ -212,11 +212,38 @@ body.dark .search-header input::placeholder {
 }
 
 body.dark .search-header input:focus {
-  border-color: rgb(238, 235, 235);
-  box-shadow: 15px 10px 15px rgba(255, 255, 255, 0.402);
+  border-color: rgb(21, 20, 20);
+  box-shadow: 8px 8px 10px rgba(12, 10, 10, 0.402);
   outline: none;
 }
 
 body.dark .search-header a:hover {
-  opacity: 0.9;
+  background-color: rgb(52, 4, 155);
+}
+
+body.dark .search-header input {
+  color: rgb(177, 171, 171);
+  font-family: 'Maven Pro', sans-serif;
+}
+
+body.dark .bg-support {
+  background-color: rgb(25, 20, 36);
+}
+
+body.dark .perguntas summary {
+  background-color: var(--cards-dark);
+  box-shadow: 3px 3px 4px rgba(22, 22, 31, 0.402);
+}
+
+body.dark .perguntas summary:hover {
+  background-color: var(--cards-dark);
+  box-shadow: 7px 7px 7px rgba(28, 23, 33, 0.915);
+}
+
+body.dark .h1 {
+  color: var(--colorTextDark);
+}
+
+body.dark .perguntas p {
+  color: var(--clearTextDark);
 }

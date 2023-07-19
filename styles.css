@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
 
 /* início dos estilos */
 :root {
@@ -662,15 +662,6 @@ hr { border-color: transparent; }
 /**/
 
 /* inicio central de suporte */
-/* .bg-support {
-    background-image: url(./imagens/bg-suporte.jpg);
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    flex-grow: 1;
-    flex-shrink: 0;
-    padding: 150px;
-} */
 
 .bg-support {
     padding-top: 50px;
@@ -685,12 +676,13 @@ hr { border-color: transparent; }
 }
 
 .search-header {
-    margin: 60px 2rem 0 0;
+    margin: 90px 2rem 0 0;
 }
 
 .center-search-header {
     display: flex;
     flex-direction: column;
+    gap: 70px;
     }
 
 .search-header h1 {
@@ -706,8 +698,6 @@ hr { border-color: transparent; }
     display: flex;
 }
 
-
-
 .search-input {
     width: 400px;
     padding: 10px 20px;
@@ -720,7 +710,7 @@ hr { border-color: transparent; }
 
 .search-header input:focus {
   border-color: rgb(89, 84, 84);
-  box-shadow: 0 0 2px rgba(57, 57, 64, 0.402);
+  box-shadow: 3px 3px 5px rgba(57, 57, 64, 0.402);
   outline: none;
 }
 
@@ -752,8 +742,8 @@ hr { border-color: transparent; }
     padding: 70px 2rem;
 }
 
-.artigos h1 {
-    color: var(--clearText);
+.h1 {
+    color: rgb(28, 21, 21);
 }
 
 .artigos-container {
@@ -820,6 +810,11 @@ hr { border-color: transparent; }
 .perguntas-container p {
     padding: 2rem 2rem;
     color: var(--colorText);
+}
+
+.perguntas-container a {
+    color: var(--purple);
+    text-decoration: none;
 }
 /* fim da página de suporte */
 
