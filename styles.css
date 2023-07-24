@@ -4,7 +4,7 @@
 :root {
     --bg-dark: #292634;
     --bg-darker: #18161e;
-    --bg-light: #f2f2f2;
+    --bg-light: rgb(245, 247, 255);
     --bg-lighter: #ffffff;
     --purple: rgb(118, 72, 233);
     --clear-purple: rgb(244, 240, 255);
@@ -158,9 +158,16 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--bg-lighter);
     transition: 0.3s;
-    
+    top: 0;
+    left: 0;
+    transition: .3s;
+    padding: 0 0;
+}
+
+.header.scrolled {
+    background-color: var(--bg-light);
+    border-bottom: 1px solid rgb(192, 192, 192);
 }
 
 .header .container {
@@ -175,10 +182,10 @@ body {
 
 .logo a {
     color: var(--purple);
-    font-size: 16px;
+    font-size: 18px;
     text-decoration: none;
     transition: 0.3s;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .logo a:hover {
@@ -196,33 +203,37 @@ body {
 }
 
 .menu-links {
-    color: var(--clearText);
+    color: var(--purple);
     text-decoration: none;
     display: block;
     padding: 15px 20px;
-    line-height: 1;
     transition: 0.3s;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 16px;
+    opacity: .9;
 }
 
 .menu-links:hover {
-    box-shadow: 0 -3px 0px var(--purple) inset, 500px 0 0 white inset;
+    box-shadow: 0 -3px 0 var(--purple) inset, 500px 0 0 transparent inset;
     color: var(--purple);
+    opacity: 1;
 }
 
 .acesso {
     text-decoration: none;
-    color: var(--colorTextDark);
-    background-color: var(--purple);
-    border: solid 2px var(--purple);
-    border-radius: 3px;
-    padding: 12px 17px;
+    border-radius: 10px;
+    padding: 10px 15px;
     transition: 0.3s;
+    color: var(--colorTextDark);
+    background-color: transparent;
+    border: solid 2px var(--purple);
+    color: var(--purple);
+    font-size: 17px;
 }
 
 .acesso:hover {
-    color: var(--purple);
-    background-color: white;
+    color: var(--colorTextDark);
+    background-color: var(--purple);
 }
 
 .navigation {
@@ -667,7 +678,6 @@ hr { border-color: transparent; }
     padding-top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: white;
 }
 
 .bg-support img {
@@ -691,7 +701,7 @@ hr { border-color: transparent; }
     border-bottom: solid 3px;
     border-color: var(--purple);
     color: var(--clearText);
-    line-height: 50px;
+    line-height: 100px;
 }
 
 .search-header div {
@@ -702,14 +712,12 @@ hr { border-color: transparent; }
     width: 400px;
     padding: 10px 20px;
     border-radius: 20px;
-    border-style: none;
-    background-color: var(--clear-purple);
+    border: solid 1px rgb(204, 204, 207);
+    background-color: var(--bg-lighter);
     transition: 0.3s;
-    font-size: large;
 }
 
 .search-header input:focus {
-  border-color: rgb(89, 84, 84);
   box-shadow: 3px 3px 5px rgba(57, 57, 64, 0.402);
   outline: none;
 }
@@ -724,7 +732,7 @@ hr { border-color: transparent; }
     border-radius: 20px;
     transition: 0.3s;
     margin-left: 10px;
-    padding: 20px;
+    padding: 24px;
     background-image: url(./imagens/lupa-white.png);
     background-size: 20px 20px;
     background-repeat: no-repeat;
@@ -824,8 +832,6 @@ hr { border-color: transparent; }
         flex-direction: column;
         justify-content: center;
     }
-
-    
 
     .d-flex {
         text-align: center;
@@ -1002,11 +1008,12 @@ hr { border-color: transparent; }
         align-items: center;
         position: fixed;
         top: 0;
-        right: -200px;
-        background: white;
-        width: 110px;
+        right: -250px;
+        background: var(--bg-light);
+        width: 250px;
         height: 100%;
         padding-top: 65px;
+        transition: .5s;
     }
 
 

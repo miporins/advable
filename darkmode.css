@@ -17,22 +17,18 @@ body.dark .menu-links {
 }
 
 body.dark .acesso {
-  background-color: var(--bg-dark);
   color: var(--colorTextDark);
 }
 
 body.dark .acesso:hover {
   background-color: var(--purple);
   color: var(--colorTextDark);
+  opacity: .8;
 }
 
 body.dark .menu-links:hover {
-  box-shadow: 0 -3px 0px var(--purple) inset, 500px 0 0 var(--bg-dark) inset;
+  box-shadow: 0 -3px 0px var(--purple) inset, 500px 0 0 transparent inset;
   color: var(--colorTextDark);
-}
-
-body.dark .menu {
-  background: var(--bg-dark);
 }
 
 body.dark .titles {
@@ -116,7 +112,7 @@ body.dark h3 {
 }
 
 body.dark .header {
-  background-color: var(--bg-dark);
+  background-color: transparent;
 }
 
 body.dark .card {
@@ -202,7 +198,7 @@ body.dark .artigos-cards p{
 }
 
 body.dark .search-input {
-  background-color: var(--cards-dark);
+  background-color: var(--cards-dark);border-color: rgb(21, 20, 20);
 }
 
 body.dark .search-header input::placeholder {
@@ -246,4 +242,9 @@ body.dark .h1 {
 
 body.dark .perguntas p {
   color: var(--clearTextDark);
+}
+
+body.dark .header.scrolled {
+  background-color: var(--bg-dark);
+  border: none;
 }
