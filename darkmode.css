@@ -248,3 +248,9 @@ body.dark .header.scrolled {
   background-color: var(--bg-dark);
   border: none;
 }
+
+@media (max-width: 768px) {
+  body.dark .menu {
+    background-color: var(--bg-dark);
+  }
+}
