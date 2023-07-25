@@ -22,6 +22,22 @@
         /* suas outras variáveis */
 }
 
+/**/
+/* final dos estilos*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Maven Pro', sans-serif;
+    background-color: rgba(245, 247, 255, 0.726);
+}
+
+
 .bg-light {
     background-color: var(--bg-light);
 }
@@ -136,20 +152,6 @@ li { list-style: none; }
     background-color: transparent;
 }
 
-/**/
-/* final dos estilos*/
-
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-size: 14px;
-    font-family: 'Maven Pro', sans-serif;
-    background-color: rgb(245, 247, 255);
-}
 
 /* início do menu do header */
 .header {
@@ -534,7 +536,7 @@ hr { border-color: transparent; }
 }
 /**/
 /* quinta section: segundo botão de registro */
-#sct-5 { background: #dbe9ff; }
+#sct-5 { background: #e8eeff; }
 
 #sct-5 p {
     color: var(--clearText);
@@ -611,7 +613,7 @@ hr { border-color: transparent; }
 }
 
 #chk {
-    /* display: none; */
+    display: none;
 }
 
 #chk:checked ~ .switch {

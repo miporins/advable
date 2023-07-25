@@ -4,6 +4,12 @@ function toggleTheme() {
   body.classList.toggle('dark');
 }
 
+var checkbox = document.querySelector('#chk');
+
+checkbox.addEventListener('change', function() {
+  toggleTheme();
+});
+
 // rolagem do menu
 window.addEventListener('scroll', function() {
   let header = document.querySelector('.header');
