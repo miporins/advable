@@ -6,6 +6,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
 		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="darkmode.css">
+		<link rel="stylesheet" href="node_modules/wow.js/css/libs/animate.css">
+		<link rel="stylesheet" href="node_modules/wow.js/css/libs/css.css">
 		<link rel="icon" type="image/png" sizes="32x32" href="./imagens/logotipo.png">
 		<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
 		
@@ -47,16 +50,18 @@
 			<div class="container">
 				<aside class="sidebar-sobre">
 					<div class="container-sidebar">
-						<form class="inputWithIcon">
+						<form class="form-sobre">
 							<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><style>svg{fill:#e3e7ed}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
 							<input type="text" name="search" placeholder="Procurar ..." class="searchinput-sobre">
 						</form>
 
 						<div>
 							<h2>Categorias</h2>
-							<ul>
-								<li>Basduihsdf</li>
-								<li>Kfjdsnfjkf</li>
+							<ul class="categorias-list">
+								<li><a class="categoriaslist-a select-list" href="sobre.html">Sobre</a></li>
+								<li><a class="categoriaslist-a" href="dev.html">Detalhes sobre o desenvolvimento</a></li>
+								<li><a class="categoriaslist-a" href="tutoriais.html">Tutoriais</a></li>
+								<li><a class="categoriaslist-a" href="#">Central de suporte</a></li>
 							</ul>
 						</div>
 					</div>
@@ -65,25 +70,36 @@
 				<section id="sct-2-sobre" class="container-fluid bg-dark text-color">
 					<div class="container">
 						<div>
-						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!</p>
-						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!</p>
-						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!</p>
-						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!</p>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!</p>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!</p>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!</p>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!</p>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!</p>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!</p>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam consectetur atque nulla quo asperiores. Quasi quidem molestiae neque repellendus minima reiciendis, explicabo inventore voluptas illum unde, fuga, esse incidunt sit!</p>
 						</div>
 					</div>
 				</div>
 			</section>
 		</div>
 
-		<section>
+		<section id="whatsapp" class="border-bottom">
+			<div class="container">
+				<div class="duvidas-contato">
+					<h2 class="line-height">Dúvidas? Podemos ajudar através do Whatsapp!</h2>
+					<a href="https://api.whatsapp.com/send?phone=5584999031110" class="btn-whatsapp">Fale conosco pelo <strong>Whatsapp</strong></a>
+					<h2>Ou se preferir, marque uma consultoria:</h2>
+					<input type="text">
+				</div>
+			</div>
 		</section>
 
-    <footer class="bg-dark text-color">
+		<footer class="bg-dark text-color">
 			<!--container da logo dos direitos-->
 			<div class="border-bottom container-fluid">
-				<div id="footer-container" class=" container">
+				<div id="footer-container" class="container">
 						<div class="logo-footer">
 							<div class="logo-footer-container">
 								<div><img src="./imagens/logotipo.png" alt=""></div>
@@ -93,7 +109,7 @@
 					<!---->
 
 					<!-- menu do footer -->
-					<div id="sct-6" class="line-height"><!-- container !!! ver possibilidade de usar grid para mobile-->
+					<div id="sct-6" class="line-height"><!-- container -->
 						
 						<div class="container sct-6-container">
 							<div>
@@ -101,7 +117,7 @@
 								<ul> <!-- !!! fazer um menu pra mobile -->
 									<li><a href="#">Termos de uso</a></li>
 									<li><a href="#">Políticas de privacidade</a></li>
-									<li><a href="#">Sobre o advable</a></li>
+									<li><a href="#">Sobre Advable</a></li>
 									<li><a href="#">Contatos</a></li>
 								</ul>
 							</div>
@@ -116,14 +132,37 @@
 							</div>
 							
 						</div>
+
+						<div class="menu-footer-mobile">
+							<details>
+								<summary>Sobre nós</summary>
+								<ul> <!-- !!! fazer um menu pra mobile -->
+									<li><a href="#">Termos de uso</a></li>
+									<li><a href="#">Políticas de privacidade</a></li>
+									<li><a href="#">Sobre Advable</a></li>
+									<li><a href="#">Contatos</a></li>
+								</ul>
+							</details>
+
+							<details>
+								<summary>Dúvidas e suporte</summary>
+								<ul>
+									<li><a href="#">sdaknmakekfih</a></li>
+									<li><a href="#">sdaknmak</a></li>
+									<li><a href="#">sdaknmakiuwd</a></li>
+								</ul>
+							</details>
+						</div>
+
 					</div>
 				</div>
 			</div>
 			<!-- fim do container do menu do footer-->
 
 		<!-- icones do footer -->
-		<div id="footer-icons" class="container-fluid"> <!--ver possibilidade de mudar esse footer pra div -->
+		<div id="footer-icons" class="container-fluid">
 			<div class="container"> <!--container-->
+
 				<nav id="social-media">
 					<ul>
 						<li class="margin-footer">
@@ -139,10 +178,24 @@
 				</nav>
 
 				<p>Todos os direitos reservados.</p>
+
+				<button class="theme-btn" onclick="toggleTheme()">
+					<input type="checkbox" id="chk" class="theme-checkbox">
+					<label for="chk" class="switch">
+						<span class="slider"></span>
+					</label>
+				</button>
 			</div><!---->
 		</div>
 		<!---->
 		</footer>
-		<script src="/script.js"></script>
+		<!--fim do footer-->
+	</main>
+	<script src="/node_modules/wow.js/dist/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+
+	<script src="/script.js"></script>
   </body>
 </html>

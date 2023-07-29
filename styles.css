@@ -668,6 +668,14 @@ hr { border-color: transparent; }
 }
 /**/
 /**/
+
+/* section de contato */
+#whatsapp h2 {
+    color: var(--clearText);
+    padding: 2rem;
+}
+
+/**/
 /* início da página sobre advable */
 
 #sct-1-sobre {
@@ -687,11 +695,10 @@ hr { border-color: transparent; }
 .sidebar-sobre {
     margin: 2rem;
 }
+
 .container-sidebar {
-    background-color: var(--clear-purple);
-    border-radius: 10px;
-    padding: 2rem;
-    height: 300px;
+    padding: 1rem;
+    height: 500px;
     margin: auto;
 }
 
@@ -702,7 +709,7 @@ hr { border-color: transparent; }
 .container-sidebar input[type=text] {
     width: 200px;
     border: 2px solid #aaa;
-    border-radius: 10px;
+    border-radius: 16px;
     margin: 8px 0;
     font-size: 16px;
     outline: none;
@@ -710,7 +717,12 @@ hr { border-color: transparent; }
     box-sizing: border-box;
     transition: .3s;
     padding-left: 40px;
-    font-family: 'Maven Pro', sans-serif;;
+    font-family: 'Maven Pro', sans-serif;
+    box-shadow: 0 0 1px rgba(57, 57, 64, 0.402);
+}
+
+.container-sidebar input[type=text]:hover {
+    box-shadow: 0 0 2px rgb(118, 72, 233);
 }
 
 .container-sidebar input[type=text]:focus {
@@ -728,16 +740,51 @@ hr { border-color: transparent; }
     left: 10px;
     top: 17px;
 }
-/**/
-/* descrição sobre advable */
-#sct-2-sobre {
-    display: block;
-    padding: 2rem;
+
+.container-sidebar h2 {
+    margin: 1rem 0;
+    color: var(--purple);
+}
+
+.categorias-list .select-list {
+    color: var(--purple);
+}
+
+.categorias-list li {
+    margin-top: 10px;
+}
+
+.categoriaslist-a {
+    text-decoration: none;
+    color: var(--colorText);
+}
+
+.categoriaslist-a:hover {
+    text-decoration: none;
+    color: var(--purple);
 }
 
 .categorias {
     padding: 10px;
-    background-color: var(--bg-light);
+    background-color: var(--clear-purple);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--clearText);
+}
+
+.categorias img {
+    margin-right: 10px;
+}
+
+.categorias-list {
+    border-left: 1px solid #dbdbdb;
+    padding-left: 15px;
+}
+
+#sct-2-sobre {
+    margin: 3rem 0;
 }
 
 #sct-2-sobre img {
@@ -751,8 +798,19 @@ hr { border-color: transparent; }
     gap: 10px;
 }
 
-#sct-2-sobre p {
-    margin: 50px;
+.content-tutoriais {
+    margin: 2rem;
+}
+
+.content-tutoriais a {
+    text-decoration: none;
+    color: var(--purple);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.articles-tutoriais {
+    padding: 2rem 0;
 }
 /**/
 
@@ -820,7 +878,7 @@ hr { border-color: transparent; }
     border-radius: 20px;
     transition: 0.3s;
     margin-left: 10px;
-    padding: 24px;
+    padding: 20px;
     background-image: url(./imagens/lupa-white.png);
     background-size: 20px 20px;
     background-repeat: no-repeat;
@@ -851,17 +909,17 @@ hr { border-color: transparent; }
 
 .artigos-cards {
     border-color: var(--purple);
-    padding: 40px;
+    padding: 30px;
     line-height: 1.6;
     box-shadow: 0 0 2px rgb(159, 157, 163);
     border-radius: 10px;
     background-color: var(--light-cards);
     transition: 0.3s;
+    text-decoration: none;
 }
 
 .artigos-cards:hover {
-    cursor: pointer;
-    box-shadow: 8px 13px 8px rgb(214, 213, 217);
+    box-shadow: 0 0 8px rgb(196, 192, 201);
 }
 
 .artigos-cards h3 {
@@ -899,13 +957,17 @@ hr { border-color: transparent; }
     box-shadow: 6px 6px 5px rgb(214, 213, 217);
 }
 
-.perguntas .perguntas-container {
+.perguntas-container {
     width: 100%;
 }
 
-.perguntas-container p {
+details p {
     padding: 2rem 2rem;
     color: var(--colorText);
+}
+
+.perguntas-p {
+    margin-top: 2rem;
 }
 
 .perguntas-container a {

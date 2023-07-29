@@ -95,9 +95,9 @@ body.dark .text-color {
   color: var(--clearTextDark);
 }
 
-body.dark .functions h3, h2 {
+/* body.dark .functions h3, h2 {
   color: var(--colorTextDark);
-}
+} */
 
 body.dark .functions p {
   color: var(--clearTextDark);
@@ -175,7 +175,6 @@ body.dark .card a:hover {
 }
 
 body.dark .artigos-cards {
-  padding: 40px;
   line-height: 1.6;
   box-shadow: 3px 3px 4px rgba(22, 22, 31, 0.402);
   border-radius: 10px;
